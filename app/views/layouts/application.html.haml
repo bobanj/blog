@@ -9,7 +9,7 @@
     %link{:rel => 'index', :title => TITLE, :href => HOME_PAGE }
     %title= yield(:title) || TITLE
     = yield :robots
-    = auto_discovery_link_tag(:rss, posts_url(:rss))
+    = auto_discovery_link_tag(:rss, FEED_BURNER_URL)
     = csrf_meta_tag
     = stylesheet_link_tag 'blog.css', :media => 'screen, projection'
     = yield :mod_style
