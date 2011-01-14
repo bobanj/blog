@@ -1,0 +1,40 @@
+- content_for :title do
+  Edit User
+- no_robots
+%h2 Manage Blog Users
+%h3 Edit the persona for this user
+.posts.archives.users
+  .comments_canvas
+    #post_a_comment
+      %h2
+      = form_for(@user) do |f|
+        #edit_user_canvas
+          %fieldset
+            .form-field
+              = f.label :name
+              = f.text_field :name, :size => "40"
+            .form-field
+              = f.label :initials
+              = f.text_field :initials, :size => "40"
+            .form-field
+              = f.label :login
+              = f.text_field :login, :size => "40"
+            .form-field
+              = f.label :email
+              = f.text_field :email, :size => "40"
+            .form-field
+              = f.label :password, f.object.new_record? ? nil : "Change Password"
+              = f.password_field :password, :size => "40"
+            .form-field
+              = f.label :password_confirmation, "Password Confirmation"
+              = f.password_field :password_confirmation, :size => "40"
+          %fieldset
+            .form-submit
+              = f.submit "Update this user"
+        / edit_user_canvas
+    / post_a_comment
+  / comments_canvas
+/ users
+- content_for :sidebar do
+  .sidebar
+  / sidebar

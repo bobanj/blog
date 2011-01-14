@@ -1,0 +1,29 @@
+- content_for :title do
+  Create Post
+- no_robots
+- stylesheet "modstyles"
+- javascript "wmd", "elastic"
+.post
+  %h2
+    %a.article{:href => "#"} Title me wisely brave citizen
+    %span.nobreak
+      %span.author= current_user.name
+      %span.date= Time.now.strftime("%b %d")
+  %p.meta
+    %a{:href => "#"} Post a comment
+  #wmd-preview.wmd-preview.entry
+- content_for :sidebar do
+  .sidebar
+    = form_for(@post) do |f|
+      #title-container
+        = f.text_field :title
+        %p /1234-title-me-wisely-brave-citizen
+      #wmd-container
+        #wmd-button-bar
+        = f.text_area :markdown, :id => "wmd-input", :cols => "92", :rows => "15"
+      .tags
+        = f.label :tag_names, 'Tags'
+        = f.text_field :tag_names
+      %ul.options.form-submit
+        %li= f.submit "Share your post with the world", :name => "save_post", :confirm => "Are you sure you want to share this post with the world?"
+        %li.right= f.submit "Save as draft", :id => "draft_submit", :name => "save_draft"

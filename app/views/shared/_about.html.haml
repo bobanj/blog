@@ -1,0 +1,17 @@
+#intro.block-content
+  %h2= "About Boban"
+  = image_tag 'avatar.jpeg'
+  %p
+    My name is Boban Jovanoski, I'm a Software Engineer
+    currently located in Skopje (Macedonia).
+    I develop web applications
+    using Ruby, Ruby on Rails, Javascript and jQuery.
+    and I use my spare time to participate in opensource projects.
+    You can email me on:
+    %script{:type => 'text/javascript'}
+      = "document.write(\"#{rot13(EMAIL_HTML)}\".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<=\"Z\"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));".html_safe
+.socialize
+  = link_to image_tag('linkedin_cloud.png'), LINKEDIN_URL, :target => '_blank', :title => 'LinkedIn', :class => 'my_tipsy'
+  = link_to image_tag('skype_cloud.png'), "skype:#{SKYPE_USERNAME}?call", :title => 'Skype', :class => 'my_tipsy'
+  = link_to image_tag('twitter_cloud.png'), "http://twitter.com/#{TWITTER_USERNAME}", :target => '_blank', :title => 'Twitter', :class => 'my_tipsy'
+  = link_to image_tag('github_cloud.png'), "https://github.com/#{GITHUB_USERNAME}/", :target => '_blank', :title => 'Github', :class => 'my_tipsy'

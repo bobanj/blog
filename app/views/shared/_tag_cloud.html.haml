@@ -1,0 +1,4 @@
+%h2 Tags
+#tag_cloud
+  - Tag.tag_words.each do |tag|
+    = link_to tag.name, tag_posts_path(tag), :rel => tag.count

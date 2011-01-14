@@ -1,0 +1,25 @@
+- title "Edit Draft"
+- no_robots
+- stylesheet "modstyles"
+- javascript "wmd", "elastic"
+.post
+  %h2
+    = link_to @draft.title, edit_draft_path, :class => "article"
+    %span.nobreak
+      %span.author= @draft.author
+      %span.date= @draft.created_at.strftime("%b %d")
+  %p.meta
+    %a{:href => "#"} Post a comment
+  #wmd-preview.wmd-preview.entry
+- content_for :sidebar do
+  .sidebar
+    = form_for(@draft) do |f|
+      #title-container.draft-title-container
+        = f.text_field :title
+        %p /1234-title-me-wisely-brave-citizen
+      #wmd-container
+        #wmd-button-bar
+        = f.text_area :markdown, :id => "wmd-input", :cols => "92", :rows => "15"
+      %ul.options.form-submit
+        %li= f.submit "Share your post with the world", :id => "post_submit", :name => "save_post", :confirm => "Are you sure you want to share this post with the world?"
+        %li.right= f.submit "Update draft", :name => "save_draft"

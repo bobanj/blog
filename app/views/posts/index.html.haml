@@ -1,0 +1,27 @@
+- title("#{FIRST_NAME}'s posts")
+- if current_user
+  - no_robots
+=render :partial => "layouts/sidebar"
+- if @posts.count == 0
+  - if current_user
+    .post
+      %h2 Crack those knuckles - lets get to work!
+      %p.meta
+        Write your first post using the #{link_to "Create Post", :controller => "posts", :action => "new"} option above.
+  - else
+    .post
+      %h2 Oh look, a butterfly!
+      %p.meta Seriously, get ready for some grey matter stimuli.
+- else
+  - for post in @posts
+    .post
+      %h2
+        = link_to post.title, post
+        %span.nobreak
+          %span.author= post.author
+          %span.date= post.posted_at.strftime("%b %d")
+      %p.meta
+        = render :partial => "meta", :locals => { :post => post }
+      .entry
+        = find_and_preserve post.content.html_safe
+  = will_paginate(@posts)

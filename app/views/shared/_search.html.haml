@@ -1,0 +1,6 @@
+#search.block-content
+  = link_to "#{FIRST_NAME}'s Archive", archives_path
+  %form{:action => "http://www.google.com/search", :method => "get"}
+    %fieldset
+      %input{:name => "q", :type => "text"}
+      %input{:name => "sitesearch", :type => "hidden", :value => HOME_PAGE}

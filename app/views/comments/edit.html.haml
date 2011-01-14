@@ -1,0 +1,30 @@
+- no_robots
+.post
+  %h2
+    = link_to @post.title, @post, :class => "article"
+    %span.nobreak
+      %span.author= @post.author
+      %span.date= @post.posted_at.strftime("%b %d")
+  %p.meta
+    = render :partial => "posts/meta", :locals => { :post => @post }
+  .entry
+    = find_and_preserve @post.content.html_safe
+
+= form_for([@post, @comment]) do |f|
+  #new_comment_canvas
+    %fieldset
+      .form-field
+        = f.label 'Name'
+        = f.text_field :name, :size => "40"
+      .form-field
+        = f.label 'Email'
+        = f.text_field :email, :size => "40"
+      .form-field
+        = f.label 'Website'
+        = f.text_field :website, :size => "40"
+    %fieldset
+      .form-field
+        = f.text_area :content, :cols => "55", :rows => "6"
+    %fieldset
+      .form-submit
+        = f.submit "Update comment", :disable_with => "Updating comment"

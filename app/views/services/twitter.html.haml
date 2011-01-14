@@ -1,0 +1,4 @@
+- @tweets.each do |tweet|
+  %p
+    = auto_link tweet.text
+    %span.time= link_to time_ago_in_words(tweet.created_at) + ' ago' , "http://twitter.com/#{TWITTER_USERNAME}/status/#{tweet.id}"

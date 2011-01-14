@@ -1,0 +1,1367 @@
+/*-----------------------------------------------------------
+						RESET
+-----------------------------------------------------------*/
+/* line 5, ../../app/stylesheets/blog_old.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background-color: transparent;
+}
+
+/* line 13, ../../app/stylesheets/blog_old.scss */
+.clear {
+  clear: both;
+}
+
+/* line 16, ../../app/stylesheets/blog_old.scss */
+body {
+  line-height: 1;
+}
+
+/* line 19, ../../app/stylesheets/blog_old.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 22, ../../app/stylesheets/blog_old.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 26, ../../app/stylesheets/blog_old.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 31, ../../app/stylesheets/blog_old.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 35, ../../app/stylesheets/blog_old.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 38, ../../app/stylesheets/blog_old.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 41, ../../app/stylesheets/blog_old.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-----------------------------------------------------------
+		TYPOGRAPHY - GLOBAL
+-----------------------------------------------------------*/
+/* line 49, ../../app/stylesheets/blog_old.scss */
+body {
+  margin: 0;
+  background-color: #FFF;
+  color: #666;
+  /*font: normal 0.9em/1.5 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+/* line 57, ../../app/stylesheets/blog_old.scss */
+a:link, a:visited {
+  color: #333;
+}
+/* line 59, ../../app/stylesheets/blog_old.scss */
+a:hover, a:active {
+  color: #000;
+}
+
+/* line 62, ../../app/stylesheets/blog_old.scss */
+h1 {
+  font-size: 1.5em;
+}
+
+/* line 65, ../../app/stylesheets/blog_old.scss */
+h2 {
+  margin: 1em 0 1.5em;
+  color: #AAA;
+  font-size: 1.3em;
+}
+
+/* line 70, ../../app/stylesheets/blog_old.scss */
+h3 {
+  margin: 1.5em 0 .5em;
+  font-size: 1.1em;
+}
+
+/* line 74, ../../app/stylesheets/blog_old.scss */
+p {
+  margin: .2em 0 1em;
+}
+
+/* line 77, ../../app/stylesheets/blog_old.scss */
+ul, ol {
+  margin: .2em 0 1em 2.1em;
+}
+
+/* line 80, ../../app/stylesheets/blog_old.scss */
+ul li, ol li {
+  margin-bottom: .75em;
+}
+
+/* line 83, ../../app/stylesheets/blog_old.scss */
+ul li {
+  list-style: disc;
+}
+
+/* line 86, ../../app/stylesheets/blog_old.scss */
+ol li {
+  list-style: decimal;
+}
+
+/* line 89, ../../app/stylesheets/blog_old.scss */
+.hidden {
+  display: none !important;
+}
+
+/* line 92, ../../app/stylesheets/blog_old.scss */
+kbd, code, tt {
+  font: normal 12px/16px "Monaco", "Courier New", Courier, monospace;
+}
+
+/*-----------------------------------------------------------
+					LAYOUT
+-----------------------------------------------------------*/
+/* line 99, ../../app/stylesheets/blog_old.scss */
+body {
+  text-align: center;
+  min-width: 860px;
+}
+
+/* line 103, ../../app/stylesheets/blog_old.scss */
+.wrapper, .footer, .header {
+  width: 860px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* line 108, ../../app/stylesheets/blog_old.scss */
+.content {
+  float: left;
+  width: 520px;
+}
+
+/* line 112, ../../app/stylesheets/blog_old.scss */
+.sidebar {
+  float: right;
+  width: 270px;
+  margin: 12px 0 0 0;
+}
+
+/* line 117, ../../app/stylesheets/blog_old.scss */
+.footer {
+  border-top: 1px solid #DDD;
+  clear: both;
+  font-size: 12px;
+}
+/* line 121, ../../app/stylesheets/blog_old.scss */
+.footer p {
+  padding: 8px 0 0 0;
+}
+/* line 123, ../../app/stylesheets/blog_old.scss */
+.footer span {
+  float: right;
+}
+
+/* line 126, ../../app/stylesheets/blog_old.scss */
+.header {
+  margin-bottom: 15px;
+  text-indent: -10000px;
+  background-color: #75D9EB;
+  font-size: 0.3em;
+}
+
+/*-----------------------------------------------------------
+				ADMINBAR
+-----------------------------------------------------------*/
+/* line 136, ../../app/stylesheets/blog_old.scss */
+.adminbar {
+  background: url("../images/adminbar.png") left top repeat-x;
+  height: 30px;
+}
+/* line 139, ../../app/stylesheets/blog_old.scss */
+.adminbar a {
+  border: medium none;
+  color: #fff;
+  display: block;
+  font: 13px/28px Arial, Helvetica, sans-serif;
+  letter-spacing: normal;
+  padding: 0 0.85em;
+  text-decoration: none !important;
+  text-shadow: 0 -1px 0 #333333;
+}
+/* line 148, ../../app/stylesheets/blog_old.scss */
+.adminbar a:hover {
+  background: url("../images/adminhover.png") left top repeat-x;
+  height: 30px;
+}
+/* line 151, ../../app/stylesheets/blog_old.scss */
+.adminbar a.closed {
+  color: #ddd;
+}
+/* line 153, ../../app/stylesheets/blog_old.scss */
+.adminbar a.closed:hover {
+  color: #ddd;
+}
+/* line 155, ../../app/stylesheets/blog_old.scss */
+.adminbar a.open {
+  color: #78D261;
+  text-shadow: 0 -1px 0 #555555;
+}
+/* line 158, ../../app/stylesheets/blog_old.scss */
+.adminbar a.open:hover {
+  color: #78D261;
+  text-shadow: 0 -1px 0 #555555;
+}
+/* line 161, ../../app/stylesheets/blog_old.scss */
+.adminbar a.delete {
+  color: #ddd;
+  text-shadow: 0 -1px 0 #555555;
+}
+/* line 164, ../../app/stylesheets/blog_old.scss */
+.adminbar a.delete:hover {
+  color: #ddd;
+  text-shadow: 0 -1px 0 #555555;
+}
+/* line 167, ../../app/stylesheets/blog_old.scss */
+.adminbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 171, ../../app/stylesheets/blog_old.scss */
+.adminbar li {
+  float: left;
+  list-style: none;
+}
+/* line 174, ../../app/stylesheets/blog_old.scss */
+.adminbar li.right {
+  float: right;
+}
+/* line 177, ../../app/stylesheets/blog_old.scss */
+.adminbar li em {
+  border: medium none;
+  color: #fff;
+  display: block;
+  font: 13px/28px Arial, Helvetica, sans-serif;
+  letter-spacing: normal;
+  padding: 0 0.85em;
+  text-decoration: none !important;
+  text-shadow: 0 -1px 0 #333333;
+}
+
+/* line 187, ../../app/stylesheets/blog_old.scss */
+.comments-toggle {
+  margin: 6px 0 0 10px;
+}
+
+/* line 190, ../../app/stylesheets/blog_old.scss */
+.adminbar a.spam {
+  padding-top: 2px;
+}
+
+/*-----------------------------------------------------------
+					SIDEBAR
+-----------------------------------------------------------*/
+/* line 198, ../../app/stylesheets/blog_old.scss */
+.sidebar h2 {
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 1.2em;
+}
+/* line 203, ../../app/stylesheets/blog_old.scss */
+.sidebar #tag_cloud {
+  margin-bottom: 10px;
+}
+/* line 206, ../../app/stylesheets/blog_old.scss */
+.sidebar #tweets_container {
+  margin-bottom: 10px;
+}
+/* line 208, ../../app/stylesheets/blog_old.scss */
+.sidebar #tweets_container p {
+  line-height: 1.3;
+  font-size: .9em;
+  margin: 0 0 0.8em 0;
+}
+/* line 213, ../../app/stylesheets/blog_old.scss */
+.sidebar #tweets_container a {
+  font-weight: bold;
+  border-bottom: 1px solid #75D9EB;
+  color: #00ADEC;
+  text-decoration: none;
+}
+/* line 219, ../../app/stylesheets/blog_old.scss */
+.sidebar #tweets_container a.image {
+  border-bottom: none;
+}
+/* line 223, ../../app/stylesheets/blog_old.scss */
+.sidebar .block-content {
+  margin: 22px 0 0 0;
+  padding: 0 0 0.1em;
+}
+/* line 226, ../../app/stylesheets/blog_old.scss */
+.sidebar .block-content h2 {
+  margin: 0 0 .7em;
+  color: #75D9EB;
+  font-size: 1.2em;
+}
+/* line 230, ../../app/stylesheets/blog_old.scss */
+.sidebar .block-content p {
+  line-height: 1.8;
+  font-size: .9em;
+}
+/* line 233, ../../app/stylesheets/blog_old.scss */
+.sidebar .block-content a {
+  font-weight: bold;
+  border-bottom: 1px solid #75D9EB;
+  color: #00ADEC;
+  text-decoration: none;
+}
+/* line 239, ../../app/stylesheets/blog_old.scss */
+.sidebar .block-content a:image {
+  border-bottom: none;
+}
+/* line 244, ../../app/stylesheets/blog_old.scss */
+.sidebar div#search {
+  background-color: #D3F6FC;
+  text-align: center;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding-top: 0.5em;
+  padding-bottom: 0.9em;
+}
+/* line 251, ../../app/stylesheets/blog_old.scss */
+.sidebar div#search a {
+  font-size: 0.9em;
+}
+/* line 253, ../../app/stylesheets/blog_old.scss */
+.sidebar div#search form input {
+  padding: 5px 5px 5px 30px;
+  width: 205px;
+  font-size: 0.9em;
+  margin-top: 0.9em;
+  color: #7c7c7c;
+  background: white url("../images/search.png") no-repeat 0.5em center;
+}
+
+/* Archive and Google Search */
+/*.sidebar div#search form fieldset {
+	display: inline-block;
+}*/
+/* Subscribe to feed */
+/* line 268, ../../app/stylesheets/blog_old.scss */
+.subscribe {
+  margin: 20px 0 20px 0;
+}
+/* line 270, ../../app/stylesheets/blog_old.scss */
+.subscribe a {
+  display: inline;
+  padding-left: 1.9em;
+  background: url("../images/rss6.png") no-repeat left center;
+  color: #F47719;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4em;
+  height: 32px;
+}
+
+/* line 280, ../../app/stylesheets/blog_old.scss */
+.feedburner {
+  text-align: center;
+}
+
+/* Company introduction */
+/* line 286, ../../app/stylesheets/blog_old.scss */
+.sidebar #intro p {
+  color: #999999;
+  letter-spacing: 0.3px;
+}
+/* line 289, ../../app/stylesheets/blog_old.scss */
+.sidebar span.portrait {
+  background-color: #FFFFFF;
+  border: 1px solid #C8C7BA;
+  display: block;
+  float: left;
+  margin-right: 12px;
+  margin-top: 8px;
+  padding: 4px;
+  position: relative;
+  /*box-shadow: 2px 2px 2px #ccc;
+  -moz-box-shadow: 2px 2px 2px #ccc;
+  -webkit-box-shadow: 2px 2px 2px #ccc;*/
+}
+/* line 301, ../../app/stylesheets/blog_old.scss */
+.sidebar span.portrait img {
+  border: 1px solid #555653;
+  display: block;
+}
+
+/*-----------------------------------------------------------
+				BLOG POST
+-----------------------------------------------------------*/
+/* line 309, ../../app/stylesheets/blog_old.scss */
+.post {
+  color: #333;
+  clear: both;
+}
+/* line 312, ../../app/stylesheets/blog_old.scss */
+.post h2 {
+  font-size: 28px;
+  color: #00ADEC;
+  letter-spacing: -1px;
+  line-height: 30px;
+}
+/* line 317, ../../app/stylesheets/blog_old.scss */
+.post h2 a {
+  color: #00ADEC;
+  text-decoration: none;
+}
+/* line 320, ../../app/stylesheets/blog_old.scss */
+.post h2 a:hover {
+  color: #00ADEC;
+  text-decoration: underline;
+}
+/* line 323, ../../app/stylesheets/blog_old.scss */
+.post h2 a.article {
+  text-decoration: none;
+}
+/* line 326, ../../app/stylesheets/blog_old.scss */
+.post h2 span.author {
+  font-size: 24px;
+  color: #75D9EB;
+  overflow: visible;
+}
+/* line 330, ../../app/stylesheets/blog_old.scss */
+.post h2 span.date {
+  font-size: 24px;
+  font-weight: normal;
+  color: #ddd;
+}
+/* line 334, ../../app/stylesheets/blog_old.scss */
+.post span.nobreak {
+  white-space: nowrap;
+  display: inline-block;
+  /*IE 6 fix*/
+}
+/* line 338, ../../app/stylesheets/blog_old.scss */
+.post p.meta {
+  margin: -35px 0 20px 0;
+  color: #999;
+  font-size: .9em;
+  background: url("../images/comment.gif") left center no-repeat;
+  padding: 3px 0 0 29px;
+  vertical-align: middle;
+  height: 24px;
+}
+/* line 346, ../../app/stylesheets/blog_old.scss */
+.post p.meta a {
+  font-weight: bold;
+  border-bottom: 1px solid #75D9EB;
+  color: #00ADEC;
+  text-decoration: none;
+}
+/* line 352, ../../app/stylesheets/blog_old.scss */
+.post .entry p {
+  line-height: 21px;
+  font-size: 1em;
+}
+/* line 355, ../../app/stylesheets/blog_old.scss */
+.post .entry h1, .post .entry h2, .post .entry h5, .post .entry h6 {
+  margin: 1.5em 0 .6em;
+  color: #DC143C;
+  font-size: 1.0em;
+}
+/* line 359, ../../app/stylesheets/blog_old.scss */
+.post .entry h3 {
+  color: #00ADEC;
+  font-size: 1.2em;
+}
+/* line 362, ../../app/stylesheets/blog_old.scss */
+.post .entry h4 {
+  margin: 1.5em 0 .6em;
+  color: #333;
+  font-size: 1.1em;
+}
+/* line 366, ../../app/stylesheets/blog_old.scss */
+.post .entry a {
+  font-weight: bold;
+  border-bottom: 1px solid #75D9EB;
+  color: #00ADEC;
+  text-decoration: none;
+}
+/* line 371, ../../app/stylesheets/blog_old.scss */
+.post .entry a:hover {
+  border-color: #666;
+  color: #000;
+}
+/* line 374, ../../app/stylesheets/blog_old.scss */
+.post .entry img {
+  display: block;
+  /*padding: 3px;*/
+}
+/* line 377, ../../app/stylesheets/blog_old.scss */
+.post .entry img.align-right {
+  float: right;
+  margin: .3em 0 .6em 20px;
+}
+/* line 380, ../../app/stylesheets/blog_old.scss */
+.post .entry img.align-left {
+  float: left;
+  margin: .3em 20px .6em 0;
+}
+/* line 383, ../../app/stylesheets/blog_old.scss */
+.post .entry blockquote, .post .entry q {
+  quotes: "\201C" "\201D";
+  clear: both;
+}
+/* line 386, ../../app/stylesheets/blog_old.scss */
+.post .entry blockquote, .post .entry q {
+  margin: 1em 2em;
+  padding: .5em 1.3em;
+  /*border-left: 1px solid #DDD;*/
+  color: #666;
+  font: italic 0.9em/1.7 Georgia, "Times New Roman", Times, serif;
+  margin-top: -40px;
+}
+/* line 394, ../../app/stylesheets/blog_old.scss */
+.post .entry blockquote:before, .post .entry blockquote:after {
+  color: #75D9EB;
+  display: block;
+  font-size: 625%;
+}
+/* line 399, ../../app/stylesheets/blog_old.scss */
+.post .entry q:before, .post .entry q:after {
+  color: #75D9EB;
+  display: block;
+  font-size: 625%;
+}
+/* line 403, ../../app/stylesheets/blog_old.scss */
+.post .entry blockquote:before, .post .entry q:before {
+  content: open-quote;
+  height: 45px;
+  margin-left: -0.55em;
+  margin-top: -5px;
+}
+/* line 408, ../../app/stylesheets/blog_old.scss */
+.post .entry blockquote:after, .post .entry q:after {
+  /*content: close-quote;*/
+  content: '';
+  height: 60px;
+  margin-top: -75px;
+  margin-left: 415px;
+}
+/* line 414, ../../app/stylesheets/blog_old.scss */
+.post .entry code {
+  display: block;
+  margin: 1em 2em;
+  padding: 1em 1.5em;
+  white-space: pre-wrap;
+}
+/* line 419, ../../app/stylesheets/blog_old.scss */
+.post .entry ul li {
+  margin: 0 .8em .5em;
+  list-style-type: circle;
+}
+/* line 422, ../../app/stylesheets/blog_old.scss */
+.post .entry ol li {
+  margin: 0 .8em .5em;
+  list-style-type: decimal;
+}
+/* line 425, ../../app/stylesheets/blog_old.scss */
+.post .entry em.strike {
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: line-through;
+}
+/* line 429, ../../app/stylesheets/blog_old.scss */
+.post p.full-post {
+  margin: 1.5em 0 0 0;
+}
+/* line 431, ../../app/stylesheets/blog_old.scss */
+.post p.full-post a {
+  padding: .25em .5em;
+  background-color: #EEE;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+/* line 439, ../../app/stylesheets/blog_old.scss */
+.post p.full-post a:hover {
+  background-color: #333;
+  color: #FFF;
+  text-shadow: 0 1px 0 #222;
+}
+/* line 443, ../../app/stylesheets/blog_old.scss */
+.post ul.social {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  padding: 10px 0 5px 0;
+  margin-bottom: 10px;
+  background-color: #FFE8D9;
+  border-top: 1px solid #f88900;
+}
+/* line 452, ../../app/stylesheets/blog_old.scss */
+.post ul.social li {
+  list-style: none;
+  margin: 0 12px 5px;
+  padding: 5px 0 5px 0;
+}
+/* line 456, ../../app/stylesheets/blog_old.scss */
+.post ul.social li.feed {
+  font-size: 0.9em;
+}
+/* line 458, ../../app/stylesheets/blog_old.scss */
+.post ul.social a {
+  color: #f88900;
+  border-bottom: 1px solid #f88900;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 465, ../../app/stylesheets/blog_old.scss */
+.post ul.social_fixed {
+  display: block;
+  position: fixed;
+  top: 55px;
+  margin: 0 0 0 -95px;
+  padding: 0;
+}
+/* line 472, ../../app/stylesheets/blog_old.scss */
+.post ul.social_fixed li {
+  background-color: #fff;
+  list-style: none;
+  text-align: center;
+  margin: 0 12px 5px;
+  padding: 0;
+}
+
+/* Meta */
+/* Blog entry */
+/*.post .entry code {
+	display: block;
+	margin: 1em 2em;
+	padding: 1em 1.5em;
+	border-left: 1px solid #DDD;
+	background-color: #EEE;
+	white-space: pre-wrap;
+}*/
+/* Link to full blog post */
+/*-----------------------------------------------------------
+				SOCIAL STYLES
+-----------------------------------------------------------*/
+/*-----------------------------------------------------------
+					COMMENTS
+-----------------------------------------------------------*/
+/* line 505, ../../app/stylesheets/blog_old.scss */
+.comments_canvas {
+  background-color: #D3F6FC;
+  display: block;
+  clear: both;
+}
+/* line 509, ../../app/stylesheets/blog_old.scss */
+.comments_canvas h2 {
+  overflow: hidden;
+  border-bottom: 1px solid #DDD;
+  font-size: 1.0em;
+  letter-spacing: normal;
+  margin: 0 0 15px 0;
+  background-color: #ffffff;
+}
+/* line 516, ../../app/stylesheets/blog_old.scss */
+.comments_canvas h2 span.count {
+  float: right;
+  padding: .1em .5em;
+  background-color: #DDD;
+  color: #FFF;
+  text-shadow: 0 1px 0 #CCC;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+/* line 524, ../../app/stylesheets/blog_old.scss */
+.comments_canvas h2.plain {
+  margin: 0;
+  border-bottom: none;
+}
+/* line 527, ../../app/stylesheets/blog_old.scss */
+.comments_canvas h2 img {
+  float: right;
+  margin-top: 7px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+/* line 532, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment, .comments_canvas #post_a_comment {
+  margin: 0 12px 5px 12px;
+  padding: 5px 0 10px 5px;
+}
+/* line 535, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .admin_comment {
+  border: 1px solid #75D9EB;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+/* line 540, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment a {
+  float: left;
+  margin-right: 10px;
+}
+/* line 544, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment p {
+  font-size: 0.9em;
+  line-height: 18px;
+  clear: both;
+}
+/* line 548, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment h3 {
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: normal;
+  margin: 0;
+  margin: 0 0 7px 0;
+}
+/* line 554, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment h3 span.name {
+  color: #00ADEC;
+}
+/* line 556, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment h3 span.name a {
+  color: #00ADEC;
+}
+
+/* Comment */
+/* line 561, ../../app/stylesheets/blog_old.scss */
+h3 span.date {
+  color: #ccc;
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+
+/* line 567, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment h3 span.stats {
+  float: right;
+}
+/* line 569, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment h3 span.stats span {
+  padding: 0 0 0 5px;
+}
+/* line 571, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment h3 span.stats .rep {
+  vertical-align: text-top;
+}
+/* line 573, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment h3 span.aux {
+  vertical-align: text-bottom;
+  cursor: pointer;
+}
+/* line 576, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment h3 span.aux img {
+  padding-right: 5px;
+}
+
+/* line 579, ../../app/stylesheets/blog_old.scss */
+.comment-body {
+  font-size: 0.9em;
+  line-height: 1.3em;
+  white-space: pre-wrap;
+}
+
+/* line 586, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment blockquote {
+  display: block;
+  color: #666666;
+  font: italic 0.9em/1.7 Georgia, "Times New Roman", Times, serif;
+  line-height: 18px;
+  margin: 0 40px 0 15px;
+}
+/* line 592, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .comment code {
+  display: block;
+  margin: 0 15px 0 15px;
+}
+/* line 595, ../../app/stylesheets/blog_old.scss */
+.comments_canvas #post_a_comment {
+  padding: 0;
+  /*padding between last comment and comments container*/
+}
+/* line 598, ../../app/stylesheets/blog_old.scss */
+.comments_canvas #post_a_comment h2 {
+  padding: 20px 0 0 0;
+  /*whitepaces between last comment and [Post a comment]*/
+  margin-left: -12px;
+  margin-right: -12px;
+}
+/* line 603, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .form-field {
+  margin-bottom: 1em;
+}
+/* line 605, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .form-field input, .comments_canvas .form-field textarea {
+  padding: .25em .5em;
+  font: normal 0.9em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+/* line 609, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .form-submit input, .comments_canvas .form-submit span#submit-comment {
+  padding: .25em .5em;
+  font: normal 0.9em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* Post a comment */
+/* line 615, ../../app/stylesheets/blog_old.scss */
+.sidebar .form-submit input {
+  padding: .25em .5em;
+  font: normal 0.9em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* line 620, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .form-field textarea#comment_content {
+  font-weight: bold;
+}
+/* line 623, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .form-submit input, .comments_canvas .form-submit span#submit-comment {
+  border: 0;
+  background-color: #333;
+  color: #FFF;
+  text-shadow: 0 1px 0 #222;
+  font-weight: bold;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 0 0 15px 0;
+}
+
+/* line 634, ../../app/stylesheets/blog_old.scss */
+.sidebar .form-submit input {
+  border: 0;
+  background-color: #333;
+  color: #FFF;
+  text-shadow: 0 1px 0 #222;
+  font-weight: bold;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 0 0 15px 0;
+}
+
+/* line 645, ../../app/stylesheets/blog_old.scss */
+.comments_canvas .form-submit span#submit-comment {
+  padding: 4px 10px 4px 10px;
+}
+
+/* Comment preview*/
+/* line 650, ../../app/stylesheets/blog_old.scss */
+#comment_preview_canvas {
+  display: none;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+/* line 654, ../../app/stylesheets/blog_old.scss */
+#comment_preview_canvas .preview_comment_link {
+  padding-bottom: 15px;
+}
+/* line 656, ../../app/stylesheets/blog_old.scss */
+#comment_preview_canvas .comment-body {
+  line-height: 18px;
+  clear: both;
+}
+/* line 659, ../../app/stylesheets/blog_old.scss */
+#comment_preview_canvas .form-submit {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+}
+
+/* line 664, ../../app/stylesheets/blog_old.scss */
+#comment_preview #comment_0 {
+  margin: 0;
+}
+
+/*Comment Closed*/
+/* line 669, ../../app/stylesheets/blog_old.scss */
+.comments_canvas #comments_closed {
+  border-bottom: none;
+  color: #333;
+}
+
+/*-----------------------------------------------------------
+					ARCHIVES
+-----------------------------------------------------------*/
+/* line 678, ../../app/stylesheets/blog_old.scss */
+.archives h2 {
+  font-size: 28px;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: block;
+}
+/* line 683, ../../app/stylesheets/blog_old.scss */
+.archives h3 {
+  font-size: 23px;
+  letter-spacing: -1px;
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-bottom: 5px;
+}
+/* line 689, ../../app/stylesheets/blog_old.scss */
+.archives ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 692, ../../app/stylesheets/blog_old.scss */
+.archives li {
+  list-style: none;
+  line-height: 12px;
+}
+/* line 695, ../../app/stylesheets/blog_old.scss */
+.archives li a {
+  color: #000;
+}
+/* line 697, ../../app/stylesheets/blog_old.scss */
+.archives li a:hover {
+  color: #ffffff !important;
+  background-color: #000;
+  text-decoration: none;
+}
+
+/* line 702, ../../app/stylesheets/blog_old.scss */
+.drafts li a:hover, .users li a:hover {
+  color: #000 !important;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+/* line 709, ../../app/stylesheets/blog_old.scss */
+.archives li a:visited {
+  color: #666;
+}
+/* line 711, ../../app/stylesheets/blog_old.scss */
+.archives li img {
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* line 715, ../../app/stylesheets/blog_old.scss */
+.archives span.comments, .archives span.latest {
+  -moz-border-radius: 3px 3px 3px 3px;
+  background-color: #DDDDDD;
+  color: #FFFFFF;
+  padding: 0.1em 0.5em;
+  text-shadow: 0 1px 0 #CCCCCC;
+}
+/* line 721, ../../app/stylesheets/blog_old.scss */
+.archives span.comments {
+  text-shadow: 0 1px 0 #ffffff;
+  color: #666;
+  margin-left: 0.5em;
+}
+
+/*-----------------------------------------------------------
+				USERS
+-----------------------------------------------------------*/
+/* line 731, ../../app/stylesheets/blog_old.scss */
+.users ul {
+  margin: 20px 0 0 0px;
+}
+/* line 733, ../../app/stylesheets/blog_old.scss */
+.users label {
+  display: block;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+/* line 738, ../../app/stylesheets/blog_old.scss */
+.sidebar .user_management a {
+  border-bottom: none;
+}
+
+/* line 742, ../../app/stylesheets/blog_old.scss */
+.fieldWithErrors label {
+  color: #8A1F11;
+}
+/* line 744, ../../app/stylesheets/blog_old.scss */
+.fieldWithErrors input {
+  color: #8A1F11;
+  background-color: #FBE3E4;
+  border-color: #FBC2C4;
+}
+
+/*-----------------------------------------------------------
+					SPAM
+-----------------------------------------------------------*/
+/* line 753, ../../app/stylesheets/blog_old.scss */
+img#spam_grill {
+  float: right;
+  margin-top: -5em;
+}
+
+/*-----------------------------------------------------------
+					CREATE POST
+-----------------------------------------------------------*/
+/* line 761, ../../app/stylesheets/blog_old.scss */
+.sidebar #title-container {
+  margin-top: 13px;
+  margin-bottom: 20px;
+}
+/* line 764, ../../app/stylesheets/blog_old.scss */
+.sidebar #title-container input {
+  width: 520px;
+  padding: 3px 4px;
+  line-height: 15px;
+  color: #666;
+  font-size: 1.3em;
+  font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+  border: 1px solid #999;
+  -moz-border-radius: 6px 6px 6px 6px;
+}
+/* line 773, ../../app/stylesheets/blog_old.scss */
+.sidebar #title-container p {
+  padding: 10px 0 0 0;
+}
+
+/*-----------------------------------------------------------
+						WMD
+-----------------------------------------------------------*/
+/* line 780, ../../app/stylesheets/blog_old.scss */
+.grippie {
+  background: #eeeeee url("../images/grippie.png") no-repeat scroll center 2px;
+  border-color: #DDD;
+  border-style: solid;
+  border-width: 0 1px 1px;
+  cursor: s-resize;
+  height: 9px;
+  overflow: hidden;
+}
+
+/* line 788, ../../app/stylesheets/blog_old.scss */
+.tags {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* line 793, ../../app/stylesheets/blog_old.scss */
+#wmd-container {
+  margin: 0;
+}
+/* line 795, ../../app/stylesheets/blog_old.scss */
+#wmd-container textarea {
+  font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+  border: 1px solid #999;
+  font-size: 90%;
+}
+
+/* line 800, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar, #wmd-container textarea {
+  width: 520px;
+}
+
+/* line 805, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar {
+  margin: 0;
+  height: 35px;
+  float: left;
+  clear: both;
+}
+
+/* line 811, ../../app/stylesheets/blog_old.scss */
+#wmd-container textarea {
+  padding: 3px;
+  height: 200px;
+  line-height: 1.2;
+}
+
+/* line 816, ../../app/stylesheets/blog_old.scss */
+#wmd-button-row {
+  position: relative;
+  margin: 10px 0 5px 10px;
+  padding: 0;
+  height: 20px;
+}
+
+/* line 822, ../../app/stylesheets/blog_old.scss */
+.wmd-spacer {
+  width: 1px;
+  height: 20px;
+  margin-left: 14px;
+  position: absolute;
+  background-color: Silver;
+  display: inline-block;
+  list-style: none;
+}
+
+/* line 831, ../../app/stylesheets/blog_old.scss */
+.wmd-button {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: absolute;
+  background-image: url("../images/wmd-buttons.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+  list-style: none;
+}
+
+/* line 843, ../../app/stylesheets/blog_old.scss */
+.wmd-button > a {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  display: inline-block;
+}
+
+/* line 850, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-bold-button {
+  left: 0;
+  background-position: 0 0;
+}
+/* line 853, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-italic-button {
+  left: 25px;
+  background-position: -20px 0;
+}
+/* line 856, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-spacer1 {
+  left: 50px;
+}
+/* line 858, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-link-button {
+  left: 75px;
+  background-position: -40px 0;
+}
+/* line 861, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-quote-button {
+  left: 100px;
+  background-position: -60px 0;
+}
+/* line 864, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-code-button {
+  left: 125px;
+  background-position: -80px 0;
+}
+/* line 867, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-image-button {
+  left: 150px;
+  background-position: -100px 0;
+}
+/* line 870, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-spacer2 {
+  left: 175px;
+}
+/* line 872, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-olist-button {
+  left: 200px;
+  background-position: -120px 0;
+}
+/* line 875, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-ulist-button {
+  left: 225px;
+  background-position: -140px 0;
+}
+/* line 878, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-heading-button {
+  left: 250px;
+  background-position: -160px 0;
+}
+/* line 881, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-hr-button {
+  left: 275px;
+  background-position: -180px 0;
+}
+/* line 884, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-spacer3 {
+  left: 300px;
+}
+/* line 886, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-undo-button {
+  left: 325px;
+  background-position: -200px 0;
+}
+/* line 889, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-redo-button {
+  left: 350px;
+  background-position: -220px 0;
+}
+/* line 892, ../../app/stylesheets/blog_old.scss */
+#wmd-button-bar #wmd-help-button {
+  right: 0;
+  background-position: -240px 0;
+}
+
+/* line 896, ../../app/stylesheets/blog_old.scss */
+.wmd-prompt-background {
+  background-color: Black;
+}
+
+/* line 899, ../../app/stylesheets/blog_old.scss */
+.wmd-prompt-dialog {
+  border-right: 3px solid #999;
+  border-bottom: 3px solid #999;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  background-color: #ddd;
+}
+
+/*-----------------------------------------------------------
+LOCALIZABLE (NON-IMAGE) BUTTONS
+-----------------------------------------------------------*/
+/* line 910, ../../app/stylesheets/blog_old.scss */
+div.button {
+  /* Ensure the keyboard focus outline can still be seen */
+  overflow: hidden;
+  margin-left: -1px;
+  margin-top: -1px;
+  padding: 1px;
+}
+/* line 916, ../../app/stylesheets/blog_old.scss */
+div.button a {
+  background: url("../images/button_left.gif") 0 0 no-repeat !important;
+  /* !important to overrule background: none on a:hover. Otherwise the default hover color bleeds through */
+  display: block;
+  float: left;
+  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', 'Verdana', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  height: 32px;
+  margin-right: 0.4em;
+  padding: 0 0 0 16px;
+  text-decoration: none;
+  text-shadow: 0 0 1px #ffffff;
+  text-wrap: none;
+}
+/* line 930, ../../app/stylesheets/blog_old.scss */
+div.button a:hover {
+  background: url("../images/button_left.gif") 0 0 no-repeat !important;
+  /* !important to overrule background: none on a:hover. Otherwise the default hover color bleeds through */
+  display: block;
+  float: left;
+  font-family: 'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', 'Verdana', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  height: 32px;
+  margin-right: 0.4em;
+  padding: 0 0 0 16px;
+  text-decoration: none;
+  text-shadow: 0 0 1px #ffffff;
+  text-wrap: none;
+}
+/* line 944, ../../app/stylesheets/blog_old.scss */
+div.button a span {
+  background: url("../images/button_right.gif") 100% 0 no-repeat;
+  color: #000000;
+  display: block;
+  padding: 0px 12px 3px 0;
+  line-height: 29px;
+}
+/* line 950, ../../app/stylesheets/blog_old.scss */
+div.button a:active {
+  background-position: 0 -32px !important;
+}
+/* line 952, ../../app/stylesheets/blog_old.scss */
+div.button a:active span {
+  background-position: 100% -32px !important;
+}
+/* line 954, ../../app/stylesheets/blog_old.scss */
+div.button a.disabled {
+  background-image: url("../images/add_button_left_disabled.gif");
+}
+/* line 956, ../../app/stylesheets/blog_old.scss */
+div.button a.disabled span {
+  color: #555555;
+}
+
+/* A disabled button */
+/*-----------------------------------------------------------
+					CODE HIGHLIGHTING
+-----------------------------------------------------------*/
+/*
+  IR_Black style (c) Vasily Mikhailitchenko <vaskas@programica.ru>
+*/
+/* line 968, ../../app/stylesheets/blog_old.scss */
+pre {
+  /*background: #000;*/
+}
+/* line 969, ../../app/stylesheets/blog_old.scss */
+pre code {
+  background: #203042;
+  color: #f8f8f8;
+}
+/* line 973, ../../app/stylesheets/blog_old.scss */
+pre .shebang, pre .comment, pre .template_comment, pre .javadoc {
+  color: #7c7c7c;
+}
+/* line 975, ../../app/stylesheets/blog_old.scss */
+pre .keyword, pre .tag, pre .ruby .function .keyword, pre .tex .command {
+  color: #96CBFE;
+}
+/* line 977, ../../app/stylesheets/blog_old.scss */
+pre .function .keyword, pre .sub .keyword, pre .method, pre .list .title {
+  color: #FFFFB6;
+}
+/* line 979, ../../app/stylesheets/blog_old.scss */
+pre .string, pre .attribute .value, pre .cdata, pre .filter .argument, pre .attr_selector, pre .apache .cbracket, pre .date {
+  color: #A8FF60;
+}
+/* line 981, ../../app/stylesheets/blog_old.scss */
+pre .subst {
+  color: #DAEFA3;
+}
+/* line 983, ../../app/stylesheets/blog_old.scss */
+pre .regexp {
+  color: #E9C062;
+}
+/* line 985, ../../app/stylesheets/blog_old.scss */
+pre .function .title, pre .sub .identifier, pre .pi, pre .decorator, pre .ini .title, pre .tex .special, pre .class .title, pre .constant, pre .smalltalk .class, pre .javadoctag, pre .yardoctag, pre .phpdoc, pre .nginx .built_in {
+  color: #FFFFB6;
+}
+/* line 987, ../../app/stylesheets/blog_old.scss */
+pre .symbol {
+  color: #C6C5FE;
+}
+/* line 990, ../../app/stylesheets/blog_old.scss */
+pre .ruby .symbol .string, pre .ruby .symbol .keyword, pre .ruby .symbol .keymethods {
+  color: #C6C5FE;
+}
+/* line 992, ../../app/stylesheets/blog_old.scss */
+pre .number, pre .variable, pre .vbscript, pre .literal {
+  color: #C6C5FE;
+}
+/* line 995, ../../app/stylesheets/blog_old.scss */
+pre .css .keyword {
+  color: #96CBFE;
+}
+/* line 997, ../../app/stylesheets/blog_old.scss */
+pre .css .rule .keyword, pre .css .id {
+  color: #FFFFB6;
+}
+/* line 999, ../../app/stylesheets/blog_old.scss */
+pre .css .class {
+  color: #FFF;
+}
+/* line 1001, ../../app/stylesheets/blog_old.scss */
+pre .hexcolor {
+  color: #C6C5FE;
+}
+/* line 1003, ../../app/stylesheets/blog_old.scss */
+pre .number {
+  color: #FF73FD;
+}
+/* line 1005, ../../app/stylesheets/blog_old.scss */
+pre .tex .formula {
+  opacity: 0.7;
+}

@@ -1,0 +1,74 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+    %meta{:name => "author", :content => AUTHOR }
+    %meta{:name => "description", :content => yield(:description) || DESCRIPTION }
+    %meta{:name => "keywords", :content => yield(:keywords) || KEYWORDS}
+    %link{ :href => "/favicon.ico", :rel => "shortcut icon" }
+    %link{:rel => 'index', :title => TITLE, :href => HOME_PAGE }
+    %title= yield(:title) || TITLE
+    = yield :robots
+    = auto_discovery_link_tag(:rss, posts_url(:rss))
+    = csrf_meta_tag
+    = stylesheet_link_tag 'blog.css', :media => 'screen, projection'
+    = yield :mod_style
+    = javascript_include_tag 'jquery', 'rails', 'highlight', 'tagcloud', 'tipsy'
+    = yield :mod_javascript
+    = javascript_include_tag 'application'
+  %body
+    = raw "<p class='flash_notice'> #{notice}</p>"  if notice
+    = raw "<p class='flash_error'>#{alert}</p>"     if alert
+    - if current_user
+      .adminbar
+        %ul
+          %li
+            = link_to image_tag("stock_spam.png"), post_spams_path(@current_action == "show" && @current_controller =="posts" ? @post : "0-spam-barbecue"), :class => "spam"
+          %li
+            = link_to "Top Posts", posts_path
+          %li
+            = link_to "Create Post", new_post_path
+          %li
+            = link_to "Drafts", drafts_path
+          = yield :adminbar_left
+          %li.right
+            = link_to "Logout", logout_path, :method => :delete, :class => "delete"
+          %li.right
+            = link_to "Users", users_path
+          = yield :adminbar_right
+          %li.right
+            %em
+              Welcome,
+              = current_user.name
+    .header
+      - if !current_user
+        %h1= TITLE
+    .wrapper
+      .content
+        = yield
+      = yield :sidebar
+      .clear
+    .footer
+      %p
+        Content copyright © 2011
+        %a{ :href => "#" }= TITLE
+        \.
+        %span
+          %a{ :href => "http://github.com/bobanj/blog" }GitHub
+    - if Rails.env.production? && !current_user
+      :javascript
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', #{GA_CODE}]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    :javascript
+      jQuery(window).ready(function() {
+        jQuery('.flash_notice').delay(4000).slideUp( 'slow');
+        jQuery('.flash_error').delay(11000).slideUp( 'slow');
+      });
+

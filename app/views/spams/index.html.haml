@@ -1,0 +1,68 @@
+- content_for :title do
+  Spam Grill
+- no_robots
+%h2 Spam Pit Ultra Deluxe
+- if @post
+  %h3= @post.title
+  .post
+    .comments_canvas
+      %h2.comment_count
+        = pluralize(@post.spams.count, "spam")
+        on this grill rack
+        - if @post.spams.count > 0
+          - link_to incinerate_post_spams_path(@post), :confirm => "Are you sure you want to delete all spam for this post?", :method => :delete do
+            = image_tag "fire_big.png", :alt => "incinerate all spams on this post", :title => "incinerate all spams on this post"
+      #comments
+        - for spam in @post.spams.all
+          .comment{:id => "spam_#{spam.id}"}
+            %h3
+              %span.name
+                - if spam.website == ""
+                  = spam.name
+                - else
+                  = link_to spam.name, spam.website, :rel => "nofollow"
+              %span.date= spam.created_at.strftime("%d %b %y")
+              %span.aux
+                - link_to [@post, spam], :confirm => "Are you sure you want to delete this spam?", :method => :delete do
+                  = image_tag "delete.png", :alt => "delete spam", :title => "delete spam"
+                - link_to mark_as_ham_post_spam_path(@post, spam), :confirm => "Are you sure you want to mark this spam as ham?", :method => :delete do
+                  = image_tag "wireless.png", :alt => "mark as ham", :title => "mark as ham"
+            .comment-body= sanitize(spam.content,:tags => %w(a strong em blockquote cite code), :attributes => %w(href))
+          / spam
+      / comments
+    / comments_canvas
+  / post
+- else
+  = link_to incinerate_post_spams_path("0-spam-barbecue"), :confirm => "Are you sure you want to delete all spam for this blog?", :method => :delete do
+    = image_tag "grill.png", :id => "spam_grill", :alt => "incinerate all spams everywhere", :title => "incinerate all spams everywhere"
+  - for post in @posts
+    - if post.spams.count > 0
+      %h3= post.title
+      .post
+        .comments_canvas
+          %h2.comment_count
+            = pluralize(post.spams.count, "spam")
+            on this grill rack
+            - if post.spams.count > 0
+              = link_to incinerate_post_spams_path(post), :confirm => "Are you sure you want to delete all spam for this post?", :method => :delete do
+                = image_tag "fire_big.png", :alt => "incinerate all spams on this post", :title => "incinerate all spams on this post"
+          .comments
+            - for spam in post.spams.all
+              .comment{:id => "spam_#{spam.id}"}
+                %h3
+                  %span.name
+                    - if spam.website == ""
+                      = spam.name
+                    - else
+                      = link_to spam.name, spam.website, :rel => "nofollow"
+                  %span.date= spam.created_at.strftime("%d %b %y")
+                  %span.aux
+                    = link_to [post, spam], :confirm => "Are you sure you want to delete this spam?", :method => :delete do
+                      = image_tag "delete.png", :alt => "delete spam", :title => "delete spam"
+                    = link_to mark_as_ham_post_spam_path(post, spam), :confirm => "Are you sure you want to mark this spam as ham?", :method => :delete do
+                      = image_tag "wireless.png", :alt => "mark as ham", :title => "mark as ham"
+                .comment-body= sanitize(spam.content,:tags => %w(a strong em blockquote cite code), :attributes => %w(href))
+              / spam
+          / comments
+        / comments_canvas
+      / post

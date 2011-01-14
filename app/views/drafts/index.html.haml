@@ -1,0 +1,19 @@
+- content_for :title do
+  Drafts
+- no_robots
+- stylesheet "archives"
+- if @drafts.count == 0
+  .archives
+    %h2 No Drafts for Review
+    %ul
+      %li
+        Write a post using the #{link_to "Create Post", new_post_path} option above.
+- else
+  .archives.drafts
+    %h2 Drafts for Review
+    %ul
+      - for draft in @drafts
+        %li
+          = link_to draft.title, edit_draft_path(draft)
+          = link_to draft_path(draft), :confirm => "Are you sure you want to delete this draft?", :method => :delete do
+            = image_tag "delete.png", :alt => "delete draft", :title => "delete draft"

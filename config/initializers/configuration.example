@@ -1,0 +1,32 @@
+# encoding: utf-8
+
+ADMIN_USERNAME = 'admin'
+ADMIN_PASSWORD = 'admin'
+
+HOME_PAGE   = 'http://www.boban.jovanoski.net'
+AUTHOR      = 'Boban Jovanoski'
+FIRST_NAME = "BobiYo" #nickaname is also welcome :)
+LAST_NAME = 'Jovanoski'
+TITLE       = 'Boban Jovanoski Blog'
+RSS_TITLE = 'Boban Jovanoski Posts'
+DESCRIPTION = "Blog about ...."
+KEYWORDS    = "Add keywords"
+
+POSTS_PER_PAGE = 5
+
+GA_CODE = 'YOUR GOOGLE ANALYTICS CODE'
+
+EMAIL = 'my@email.com'
+EMAIL_HTML = '<a href=\"mailto:my@email.com\">my@email.com</a>'
+
+TWITTER_USERNAME = 'bobanj'
+TWITTER_NUM_TWEETS = 5
+TWITTER_ERR_MESSAGE = "Twitter service is currently unavailable :("
+
+SKRIBIT_SCRIPT_SRC = ""
+SKRIBIT_BLOG_LINK = ""
+SKRIBIT_TITLE = "Skribit Suggestions for Boban Jovanoski Blog"
+
+LINKEDIN_URL = ''
+SKYPE_USERNAME = ''
+GITHUB_USERNAME = ''

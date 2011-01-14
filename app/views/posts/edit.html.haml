@@ -1,0 +1,31 @@
+- content_for :title do
+  Edit Post
+- no_robots
+- stylesheet "modstyles"
+- javascript "wmd", "elastic"
+.post
+  %h2
+    = link_to @post.title, post_path, :class => "article"
+    %span.nobreak
+      %span.author= @post.author
+      %span.date= @post.posted_at.strftime("%b %d")
+  %p.meta
+    - if @post.comments.count == 0
+      = link_to "Post a comment", post_path(@post, :anchor => "comments")
+    - else
+      = link_to pluralize(@post.comments.count, "comment"), post_path(@post, :anchor => "comments")
+      Latest by #{@post.comments.last.name}
+  #wmd-preview.wmd-preview.entry
+- content_for :sidebar do
+  .sidebar
+    = form_for(@post) do |f|
+      #title-container
+        = f.text_field :title
+      #wmd-container
+        #wmd-button-bar
+        = f.text_area :markdown, :id => "wmd-input", :cols => "92", :rows => "15"
+      .tags
+        = f.label :tag_names, 'Tags'
+        = f.text_field :tag_names
+      %ul.options.form-submit
+        %li.right= f.submit "Update post", :confirm => "Are you sure you want to update this post"

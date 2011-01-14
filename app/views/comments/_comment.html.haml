@@ -1,0 +1,18 @@
+- comment_class = comment.admin ? 'comment admin_comment' : 'comment'
+.comment{:id => "comment_#{comment.id}", :class => comment_class}
+  - if current_user && comment.id > 0
+    .icons
+      = link_to post_comment_path(post, comment), :confirm => "Are you sure you want to delete this comment?", :method => :delete do
+        = image_tag "comment_delete.png", :alt => "delete comment", :title => "delete comment"
+      = link_to edit_post_comment_path(post, comment) do
+        = image_tag "comment_edit.png", :alt => "edit comment", :title => "edit comment"
+      - if !comment.admin
+        = link_to mark_as_spam_post_comment_path(post, comment), :confirm => "Are you sure you want to mark this comment as spam?", :method => :delete do
+          = image_tag "comment_filter.png", :alt => "mark as spam", :title => "mark as spam"
+  - if comment.website.blank?
+    = image_tag gravatar_url comment.email
+  - else
+    = link_to image_tag(gravatar_url(comment.email)), comment.website, :rel => "nofollow"
+  .author
+    = "Posted by #{comment.name}  at #{comment.created_at.strftime("%d %b %y")}"
+  %p= sanitize(comment.content, :tags => %w(strong em blockquote code), :attributes => %w())

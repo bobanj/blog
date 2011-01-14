@@ -1,0 +1,31 @@
+- title("Archives")
+- description("Welcome to #{AUTHOR} Archive")
+- stylesheet "archives"
+- if current_user
+  - no_robots
+
+- if @posts.count == 0
+  - if current_user
+    .archives
+      %h2= "#{FIRST_NAME}'s Archive"
+      %ul
+        %li
+          Sorry, no posts to archive. Write your first post using the #{link_to "Create Post", new_post_path} option above.
+  - else
+    .archives
+      %h2= "#{FIRST_NAME}'s Archive"
+      %ul
+        %li Sorry, no posts to archive. But, best be sure you got some goodness coming!
+- else
+  .archives
+    %h2= "#{FIRST_NAME}'s Archive"
+    - @post_months.sort.reverse.each do |month, posts|
+      %h3= month.strftime("%B %Y")
+      %ul
+        - for post in posts
+          %li
+            = link_to post.title, post_path(post)
+            - if current_user
+              - if post.comments.count > 0
+                %span.comments= post.comments.count
+                %span.latest= post.comments.all.last.created_at.strftime("%b %d %Y")

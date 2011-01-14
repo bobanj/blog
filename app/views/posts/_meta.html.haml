@@ -1,0 +1,13 @@
+- if post.comments.count == 0
+  = link_to "Post a comment", post_path(post, :anchor => "comments")
+- else
+  = link_to pluralize(post.comments.count, "comment"), post_path(post, :anchor => "comments")
+  Latest by #{post.comments.all.last.name}
+.tags
+  Tags:
+  - if post.tags.empty?
+    = 'none'
+  - else
+    - post.tags.each do |tag|
+      = link_to(tag.name, tag_posts_path(tag))
+      &nbsp;

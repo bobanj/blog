@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %title= TITLE
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => AUTHOR, :name => "author"}
+    %meta{:content => DESCRIPTION, :name => "description"}
+    %meta{:content => "noarchive", :name => "robots"}
+    %meta{:content => "noindex, nofollow", :name => "robots"}
+    = stylesheet_link_tag "login"
+  %body
+    #page
+      #header
+        #site-title= link_to TITLE, root_url
+        #site-subtitle Blogcast is a better way to blog.
+      %hr.hidden
+      #main
+        #content
+          #login
+            %h1 Please Login
+            = form_for @user_session, :as => :user_session, :url => { :action => "create" } do |f|
+              %table
+                %tbody
+                  %tr
+                    %td.label= f.label :login, "Username"
+                    %td.field{:colspan => "2"}= f.text_field :login, :class => "textbox"
+                  %tr
+                    %td.label= f.label :password
+                    %td.field{:colspan => "2"}= f.password_field :password, :class => "textbox"
+                  %tr
+                    %td
+                    %td
+                    %td.buttons= f.submit "Login"
+      %hr.hidden
