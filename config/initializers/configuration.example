@@ -19,6 +19,8 @@ GA_CODE = 'YOUR GOOGLE ANALYTICS CODE'
 EMAIL = 'my@email.com'
 EMAIL_HTML = '<a href=\"mailto:my@email.com\">my@email.com</a>'.tr!("A-Za-z", "N-ZA-Mn-za-m")
 
+FEED_BURNER_URL = 'http://feeds.feedburner.com/bobanj'
+
 TWITTER_USERNAME = 'bobanj'
 TWITTER_NUM_TWEETS = 5
 TWITTER_ERR_MESSAGE = "Twitter service is currently unavailable :("
