@@ -7,6 +7,7 @@ My Blog - Its modified Blogcast:
 * Twitter Support
 * Skribit Supoort
 * Added social links
+* Using Sitemap Generator Gem
 
 Install
 ======================================================
@@ -16,3 +17,5 @@ Install
 * rake db:seed
 * rails server
 * login at : /admin
+* After creating a post, run crontask or exec rake task "sitemap:refresh"
+

@@ -1,0 +1,23 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: pass
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: blog_development
+
+test: &TEST
+  <<: *default
+  database: blog_test
+
+production:
+  <<: *default
+  database: blog_production
+
+cucumber:
+  <<: *TEST
+
