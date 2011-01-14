@@ -58,7 +58,7 @@
     - if Rails.env.production? && !current_user
       :javascript
         var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', #{GA_CODE}]);
+        _gaq.push(['_setAccount', "#{GA_CODE}"]);
         _gaq.push(['_trackPageview']);
 
         (function() {
