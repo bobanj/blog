@@ -522,6 +522,7 @@ body {
 -----------------------------------------------------------*/
 
 .comments_canvas {
+  float: left;
   background-color: #D3F6FC;
   display: block;
   clear: both;
@@ -570,7 +571,7 @@ body {
     }
     a {
       float: left;
-      margin-right: 10px;
+      //margin-right: 10px;
     }
     p{
       margin: 5px 0 0 0;
@@ -624,9 +625,11 @@ h3 span.date {
       display: block;
       margin: 0 15px 0 15px; } }
   #post_a_comment {
+    float: left;
     padding: 0;
     /*padding between last comment and comments container*/
     h2 {
+      clear: both;  
       padding: 20px 0 0 0;
       /*whitepaces between last comment and [Post a comment]*/
       margin-left: -12px;

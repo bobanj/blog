@@ -46,9 +46,8 @@
       %h2.comment_count
         = pluralize(@post.comments.count, "comment")
         so far
-      #comments.comments
-        - for comment in @post.comments.all
-          = render :partial => comment, :locals => { :post => @post }
+      - for comment in @post.comments.all
+        = render :partial => comment, :locals => { :post => @post }
     - else
       %h2.comment_count.plain
       #comments.comments
@@ -74,7 +73,7 @@
                 = f.text_area :content, :cols => "55", :rows => "6", :value => "Remember, your comment represents you. Let's add value. Some XHTML is welcomed (strong em blockquote code)."
             %fieldset
               .form-submit
-                = f.submit "Post comment", :disable_with => "Post comment"
+                = f.submit "Post comment", :disable_with => "Sending comment..."
                 %span or
                 = link_to "Preview", preview_post_comments_path(@post), :id => "preview_comment_link", :rel => "nofollow"
           #comment_preview_canvas
