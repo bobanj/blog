@@ -3,11 +3,11 @@
   %head
     %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
     %meta{:name => "author", :content => AUTHOR }
-    %meta{:name => "description", :content => yield(:description) || DESCRIPTION }
-    %meta{:name => "keywords", :content => yield(:keywords) || KEYWORDS}
+    %meta{:name => "description", :content => yield(:description).blank? ? DESCRIPTION : yield(:description) }
+    %meta{:name => "keywords", :content => yield(:keywords).blank? ? KEYWORDS : yield(:keywords)}
     %link{ :href => "/favicon.ico", :rel => "shortcut icon" }
     %link{:rel => 'index', :title => TITLE, :href => HOME_PAGE }
-    %title= yield(:title) || TITLE
+    %title= yield(:title).blank? ? TITLE : yield(:title)
     = yield :robots
     = auto_discovery_link_tag(:rss, FEED_BURNER_URL)
     = csrf_meta_tag
