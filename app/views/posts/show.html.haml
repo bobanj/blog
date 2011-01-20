@@ -1,5 +1,6 @@
 - title @post.title
 - description(@post.content)
+- keywords(@post.tags.map(&:name).join(', '))
 = render :partial => "layouts/sidebar"
 - if current_user
   - no_robots
@@ -46,11 +47,13 @@
       %h2.comment_count
         = pluralize(@post.comments.count, "comment")
         so far
-      - for comment in @post.comments.all
-        = render :partial => comment, :locals => { :post => @post }
+      #comments.comments
+        - for comment in @post.comments.all
+          = render :partial => comment, :locals => { :post => @post }
     - else
       %h2.comment_count.plain
       #comments.comments
+    #comment_preview    
     #post_a_comment
       - if !@post.commentable
         %h2#comments_closed Comments are closed
@@ -77,7 +80,6 @@
                 %span or
                 = link_to "Preview", preview_post_comments_path(@post), :id => "preview_comment_link", :rel => "nofollow"
           #comment_preview_canvas
-            #comment_preview
             .form-submit
               = f.submit "Post comment", :disable_with => "Post comment", :id => "comment_submit_preview"
               %span or

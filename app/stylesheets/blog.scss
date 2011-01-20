@@ -128,6 +128,10 @@ body {
   width: 270px;
   margin: 12px 0 0 0; }
 
+.html5_logo{
+  margin-top: 10px;
+}
+
 .footer {
   border-top: 1px solid $light_text;
   margin-top: 5px;
@@ -522,11 +526,13 @@ body {
 -----------------------------------------------------------*/
 
 .comments_canvas {
+  width: 100%;
   float: left;
   background-color: #D3F6FC;
   display: block;
   clear: both;
   h2 {
+    width: 100%;  
     overflow: hidden;
     border-bottom: 1px solid $light_text;
     font-size: 1.0em;
@@ -625,11 +631,12 @@ h3 span.date {
       display: block;
       margin: 0 15px 0 15px; } }
   #post_a_comment {
+    width: 100%;  
     float: left;
     padding: 0;
     /*padding between last comment and comments container*/
     h2 {
-      clear: both;  
+      clear: both;
       padding: 20px 0 0 0;
       /*whitepaces between last comment and [Post a comment]*/
       margin-left: -12px;
@@ -695,8 +702,8 @@ h3 span.date {
     padding: 0;
     margin-top: 25px; } }
 
-#comment_preview #comment_0 {
-  margin: 0; }
+//#comment_preview #comment_0 {
+//  margin: 0; }
 
 /*Comment Closed*/
 

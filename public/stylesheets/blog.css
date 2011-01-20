@@ -167,22 +167,27 @@ body {
 }
 
 /* line 131, ../../app/stylesheets/blog.scss */
+.html5_logo {
+  margin-top: 10px;
+}
+
+/* line 135, ../../app/stylesheets/blog.scss */
 .footer {
   border-top: 1px solid #a4a4a4;
   margin-top: 5px;
   clear: both;
   font-size: 12px;
 }
-/* line 136, ../../app/stylesheets/blog.scss */
+/* line 140, ../../app/stylesheets/blog.scss */
 .footer p {
   padding: 8px 0 0 0;
 }
-/* line 138, ../../app/stylesheets/blog.scss */
+/* line 142, ../../app/stylesheets/blog.scss */
 .footer span {
   float: right;
 }
 
-/* line 141, ../../app/stylesheets/blog.scss */
+/* line 145, ../../app/stylesheets/blog.scss */
 .header {
   margin-bottom: 15px;
   text-indent: -10000px;
@@ -193,12 +198,12 @@ body {
 /*-----------------------------------------------------------
 				ADMINBAR
 -----------------------------------------------------------*/
-/* line 151, ../../app/stylesheets/blog.scss */
+/* line 155, ../../app/stylesheets/blog.scss */
 .adminbar {
   background: url("../images/adminbar.png") left top repeat-x;
   height: 30px;
 }
-/* line 154, ../../app/stylesheets/blog.scss */
+/* line 158, ../../app/stylesheets/blog.scss */
 .adminbar a {
   border: medium none;
   color: #fff;
@@ -209,55 +214,55 @@ body {
   text-decoration: none !important;
   text-shadow: 0 -1px 0 #333333;
 }
-/* line 163, ../../app/stylesheets/blog.scss */
+/* line 167, ../../app/stylesheets/blog.scss */
 .adminbar a:hover {
   background: url("../images/adminhover.png") left top repeat-x;
   height: 30px;
 }
-/* line 166, ../../app/stylesheets/blog.scss */
+/* line 170, ../../app/stylesheets/blog.scss */
 .adminbar a.closed {
   color: #a4a4a4;
 }
-/* line 168, ../../app/stylesheets/blog.scss */
+/* line 172, ../../app/stylesheets/blog.scss */
 .adminbar a.closed:hover {
   color: #a4a4a4;
 }
-/* line 170, ../../app/stylesheets/blog.scss */
+/* line 174, ../../app/stylesheets/blog.scss */
 .adminbar a.open {
   color: #78D261;
   text-shadow: 0 -1px 0 #555555;
 }
-/* line 173, ../../app/stylesheets/blog.scss */
+/* line 177, ../../app/stylesheets/blog.scss */
 .adminbar a.open:hover {
   color: #78D261;
   text-shadow: 0 -1px 0 #555555;
 }
-/* line 176, ../../app/stylesheets/blog.scss */
+/* line 180, ../../app/stylesheets/blog.scss */
 .adminbar a.delete {
   color: #a4a4a4;
   text-shadow: 0 -1px 0 #555555;
 }
-/* line 179, ../../app/stylesheets/blog.scss */
+/* line 183, ../../app/stylesheets/blog.scss */
 .adminbar a.delete:hover {
   color: #a4a4a4;
   text-shadow: 0 -1px 0 #555555;
 }
-/* line 182, ../../app/stylesheets/blog.scss */
+/* line 186, ../../app/stylesheets/blog.scss */
 .adminbar ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 186, ../../app/stylesheets/blog.scss */
+/* line 190, ../../app/stylesheets/blog.scss */
 .adminbar li {
   float: left;
   list-style: none;
 }
-/* line 189, ../../app/stylesheets/blog.scss */
+/* line 193, ../../app/stylesheets/blog.scss */
 .adminbar li.right {
   float: right;
 }
-/* line 192, ../../app/stylesheets/blog.scss */
+/* line 196, ../../app/stylesheets/blog.scss */
 .adminbar li em {
   border: medium none;
   color: #fff;
@@ -269,12 +274,12 @@ body {
   text-shadow: 0 -1px 0 #333333;
 }
 
-/* line 202, ../../app/stylesheets/blog.scss */
+/* line 206, ../../app/stylesheets/blog.scss */
 .comments-toggle {
   margin: 6px 0 0 10px;
 }
 
-/* line 205, ../../app/stylesheets/blog.scss */
+/* line 209, ../../app/stylesheets/blog.scss */
 .adminbar a.spam {
   padding-top: 2px;
 }
@@ -282,65 +287,65 @@ body {
 /*-----------------------------------------------------------
 					SIDEBAR
 -----------------------------------------------------------*/
-/* line 213, ../../app/stylesheets/blog.scss */
+/* line 217, ../../app/stylesheets/blog.scss */
 .sidebar h2 {
   margin-bottom: 10px;
   color: #666;
   font-size: 1.2em;
 }
-/* line 218, ../../app/stylesheets/blog.scss */
+/* line 222, ../../app/stylesheets/blog.scss */
 .sidebar #tag_cloud {
   margin-bottom: 10px;
 }
-/* line 221, ../../app/stylesheets/blog.scss */
+/* line 225, ../../app/stylesheets/blog.scss */
 .sidebar #tweets_container {
   margin-bottom: 10px;
 }
-/* line 223, ../../app/stylesheets/blog.scss */
+/* line 227, ../../app/stylesheets/blog.scss */
 .sidebar #tweets_container p {
   line-height: 1.3;
   font-size: .9em;
   margin: 0 0 0.8em 0;
 }
-/* line 228, ../../app/stylesheets/blog.scss */
+/* line 232, ../../app/stylesheets/blog.scss */
 .sidebar #tweets_container a {
   font-weight: bold;
   border-bottom: 1px solid #79aff8;
   color: #3f8cf5;
   text-decoration: none;
 }
-/* line 234, ../../app/stylesheets/blog.scss */
+/* line 238, ../../app/stylesheets/blog.scss */
 .sidebar #tweets_container a.image {
   border-bottom: none;
 }
-/* line 238, ../../app/stylesheets/blog.scss */
+/* line 242, ../../app/stylesheets/blog.scss */
 .sidebar .block-content {
   margin: 22px 0 0 0;
   padding: 0 0 0.1em;
 }
-/* line 241, ../../app/stylesheets/blog.scss */
+/* line 245, ../../app/stylesheets/blog.scss */
 .sidebar .block-content h2 {
   margin: 0 0 .7em;
   color: #79aff8;
   font-size: 1.2em;
 }
-/* line 245, ../../app/stylesheets/blog.scss */
+/* line 249, ../../app/stylesheets/blog.scss */
 .sidebar .block-content p {
   line-height: 1.8;
   font-size: .9em;
 }
-/* line 248, ../../app/stylesheets/blog.scss */
+/* line 252, ../../app/stylesheets/blog.scss */
 .sidebar .block-content a {
   font-weight: bold;
   border-bottom: 1px solid #79aff8;
   color: #3f8cf5;
   text-decoration: none;
 }
-/* line 254, ../../app/stylesheets/blog.scss */
+/* line 258, ../../app/stylesheets/blog.scss */
 .sidebar .block-content a:image {
   border-bottom: none;
 }
-/* line 259, ../../app/stylesheets/blog.scss */
+/* line 263, ../../app/stylesheets/blog.scss */
 .sidebar div#search {
   background-color: #D3F6FC;
   text-align: center;
@@ -349,11 +354,11 @@ body {
   padding-top: 0.5em;
   padding-bottom: 0.9em;
 }
-/* line 266, ../../app/stylesheets/blog.scss */
+/* line 270, ../../app/stylesheets/blog.scss */
 .sidebar div#search a {
   font-size: 0.9em;
 }
-/* line 268, ../../app/stylesheets/blog.scss */
+/* line 272, ../../app/stylesheets/blog.scss */
 .sidebar div#search form input {
   padding: 5px 5px 5px 30px;
   width: 205px;
@@ -368,11 +373,11 @@ body {
 	display: inline-block;
 }*/
 /* Subscribe to feed */
-/* line 283, ../../app/stylesheets/blog.scss */
+/* line 287, ../../app/stylesheets/blog.scss */
 .subscribe {
   margin: 20px 0 20px 0;
 }
-/* line 285, ../../app/stylesheets/blog.scss */
+/* line 289, ../../app/stylesheets/blog.scss */
 .subscribe a {
   display: inline;
   padding-left: 1.9em;
@@ -384,18 +389,18 @@ body {
   height: 32px;
 }
 
-/* line 295, ../../app/stylesheets/blog.scss */
+/* line 299, ../../app/stylesheets/blog.scss */
 .feedburner {
   text-align: center;
 }
 
 /* Company introduction */
-/* line 301, ../../app/stylesheets/blog.scss */
+/* line 305, ../../app/stylesheets/blog.scss */
 .sidebar #intro p {
   color: #999999;
   letter-spacing: 0.3px;
 }
-/* line 304, ../../app/stylesheets/blog.scss */
+/* line 308, ../../app/stylesheets/blog.scss */
 .sidebar span.portrait {
   background-color: #FFFFFF;
   border: 1px solid #C8C7BA;
@@ -409,7 +414,7 @@ body {
   -moz-box-shadow: 2px 2px 2px #ccc;
   -webkit-box-shadow: 2px 2px 2px #ccc;*/
 }
-/* line 316, ../../app/stylesheets/blog.scss */
+/* line 320, ../../app/stylesheets/blog.scss */
 .sidebar span.portrait img {
   border: 1px solid #555653;
   display: block;
@@ -418,51 +423,51 @@ body {
 /*-----------------------------------------------------------
 				BLOG POST
 -----------------------------------------------------------*/
-/* line 324, ../../app/stylesheets/blog.scss */
+/* line 328, ../../app/stylesheets/blog.scss */
 .post {
   color: #333;
   clear: both;
 }
-/* line 327, ../../app/stylesheets/blog.scss */
+/* line 331, ../../app/stylesheets/blog.scss */
 .post h2 {
   font-size: 28px;
   color: #3f8cf5;
   letter-spacing: 0px;
   line-height: 30px;
 }
-/* line 332, ../../app/stylesheets/blog.scss */
+/* line 336, ../../app/stylesheets/blog.scss */
 .post h2 a {
   color: #3f8cf5;
   text-decoration: none;
 }
-/* line 335, ../../app/stylesheets/blog.scss */
+/* line 339, ../../app/stylesheets/blog.scss */
 .post h2 a:hover {
   color: #3f8cf5;
   text-decoration: underline;
 }
-/* line 338, ../../app/stylesheets/blog.scss */
+/* line 342, ../../app/stylesheets/blog.scss */
 .post h2 a.article {
   text-decoration: none;
 }
-/* line 341, ../../app/stylesheets/blog.scss */
+/* line 345, ../../app/stylesheets/blog.scss */
 .post h2 span.author {
   font-size: 24px;
   color: #79aff8;
   overflow: visible;
 }
-/* line 346, ../../app/stylesheets/blog.scss */
+/* line 350, ../../app/stylesheets/blog.scss */
 .post h2 span.date {
   font-size: 24px;
   font-weight: normal;
   color: #a4a4a4;
 }
-/* line 353, ../../app/stylesheets/blog.scss */
+/* line 357, ../../app/stylesheets/blog.scss */
 .post span.nobreak {
   white-space: nowrap;
   display: inline-block;
   /*IE 6 fix*/
 }
-/* line 357, ../../app/stylesheets/blog.scss */
+/* line 361, ../../app/stylesheets/blog.scss */
 .post p.meta {
   margin: -35px 0 20px 0;
   color: #999;
@@ -472,68 +477,68 @@ body {
   vertical-align: middle;
   height: 24px;
 }
-/* line 365, ../../app/stylesheets/blog.scss */
+/* line 369, ../../app/stylesheets/blog.scss */
 .post p.meta a {
   font-weight: bold;
   border-bottom: 1px solid #79aff8;
   color: #3f8cf5;
   text-decoration: none;
 }
-/* line 371, ../../app/stylesheets/blog.scss */
+/* line 375, ../../app/stylesheets/blog.scss */
 .post .entry p {
   line-height: 21px;
   font-size: 1em;
 }
-/* line 374, ../../app/stylesheets/blog.scss */
+/* line 378, ../../app/stylesheets/blog.scss */
 .post .entry h1, .post .entry h2, .post .entry h5, .post .entry h6 {
   margin: 1.5em 0 .6em;
   color: #DC143C;
   font-size: 1.0em;
 }
-/* line 378, ../../app/stylesheets/blog.scss */
+/* line 382, ../../app/stylesheets/blog.scss */
 .post .entry h3 {
   color: #3f8cf5;
   font-size: 1.2em;
 }
-/* line 381, ../../app/stylesheets/blog.scss */
+/* line 385, ../../app/stylesheets/blog.scss */
 .post .entry h4 {
   margin: 1.5em 0 .6em;
   color: #333;
   font-size: 1.1em;
 }
-/* line 385, ../../app/stylesheets/blog.scss */
+/* line 389, ../../app/stylesheets/blog.scss */
 .post .entry a {
   font-weight: bold;
   border-bottom: 1px solid #79aff8;
   color: #3f8cf5;
   text-decoration: none;
 }
-/* line 390, ../../app/stylesheets/blog.scss */
+/* line 394, ../../app/stylesheets/blog.scss */
 .post .entry a:hover {
   border-color: #666;
   color: #000;
 }
-/* line 393, ../../app/stylesheets/blog.scss */
+/* line 397, ../../app/stylesheets/blog.scss */
 .post .entry img {
   display: block;
   /*padding: 3px;*/
 }
-/* line 396, ../../app/stylesheets/blog.scss */
+/* line 400, ../../app/stylesheets/blog.scss */
 .post .entry img.align-right {
   float: right;
   margin: .3em 0 .6em 20px;
 }
-/* line 399, ../../app/stylesheets/blog.scss */
+/* line 403, ../../app/stylesheets/blog.scss */
 .post .entry img.align-left {
   float: left;
   margin: .3em 20px .6em 0;
 }
-/* line 402, ../../app/stylesheets/blog.scss */
+/* line 406, ../../app/stylesheets/blog.scss */
 .post .entry blockquote, .post .entry q {
   quotes: "\201C" "\201D";
   clear: both;
 }
-/* line 405, ../../app/stylesheets/blog.scss */
+/* line 409, ../../app/stylesheets/blog.scss */
 .post .entry blockquote, .post .entry q {
   margin: 1em 2em;
   padding: .5em 1.3em;
@@ -542,26 +547,26 @@ body {
   font: italic 0.9em/1.7 Georgia, "Times New Roman", Times, serif;
   margin-top: -40px;
 }
-/* line 413, ../../app/stylesheets/blog.scss */
+/* line 417, ../../app/stylesheets/blog.scss */
 .post .entry blockquote:before, .post .entry blockquote:after {
   color: #79aff8;
   display: block;
   font-size: 625%;
 }
-/* line 418, ../../app/stylesheets/blog.scss */
+/* line 422, ../../app/stylesheets/blog.scss */
 .post .entry q:before, .post .entry q:after {
   color: #79aff8;
   display: block;
   font-size: 625%;
 }
-/* line 422, ../../app/stylesheets/blog.scss */
+/* line 426, ../../app/stylesheets/blog.scss */
 .post .entry blockquote:before, .post .entry q:before {
   content: open-quote;
   height: 45px;
   margin-left: -0.55em;
   margin-top: -5px;
 }
-/* line 427, ../../app/stylesheets/blog.scss */
+/* line 431, ../../app/stylesheets/blog.scss */
 .post .entry blockquote:after, .post .entry q:after {
   /*content: close-quote;*/
   content: '';
@@ -569,33 +574,33 @@ body {
   margin-top: -75px;
   margin-left: 415px;
 }
-/* line 433, ../../app/stylesheets/blog.scss */
+/* line 437, ../../app/stylesheets/blog.scss */
 .post .entry code {
   display: block;
   padding: 1em 1.5em;
   white-space: pre-wrap;
 }
-/* line 438, ../../app/stylesheets/blog.scss */
+/* line 442, ../../app/stylesheets/blog.scss */
 .post .entry ul li {
   margin: 0 .8em .5em;
   list-style-type: circle;
 }
-/* line 441, ../../app/stylesheets/blog.scss */
+/* line 445, ../../app/stylesheets/blog.scss */
 .post .entry ol li {
   margin: 0 .8em .5em;
   list-style-type: decimal;
 }
-/* line 444, ../../app/stylesheets/blog.scss */
+/* line 448, ../../app/stylesheets/blog.scss */
 .post .entry em.strike {
   font-weight: normal;
   font-style: normal;
   text-decoration: line-through;
 }
-/* line 448, ../../app/stylesheets/blog.scss */
+/* line 452, ../../app/stylesheets/blog.scss */
 .post p.full-post {
   margin: 1.5em 0 0 0;
 }
-/* line 450, ../../app/stylesheets/blog.scss */
+/* line 454, ../../app/stylesheets/blog.scss */
 .post p.full-post a {
   padding: .25em .5em;
   background-color: #EEE;
@@ -605,13 +610,13 @@ body {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
-/* line 458, ../../app/stylesheets/blog.scss */
+/* line 462, ../../app/stylesheets/blog.scss */
 .post p.full-post a:hover {
   background-color: #333;
   color: #FFF;
   text-shadow: 0 1px 0 #222;
 }
-/* line 462, ../../app/stylesheets/blog.scss */
+/* line 466, ../../app/stylesheets/blog.scss */
 .post ul.social {
   display: block;
   margin: 0;
@@ -622,24 +627,24 @@ body {
   background-color: #FFE8D9;
   border-top: 1px solid #f88900;
 }
-/* line 471, ../../app/stylesheets/blog.scss */
+/* line 475, ../../app/stylesheets/blog.scss */
 .post ul.social li {
   list-style: none;
   margin: 0 12px 5px;
   padding: 5px 0 5px 0;
 }
-/* line 475, ../../app/stylesheets/blog.scss */
+/* line 479, ../../app/stylesheets/blog.scss */
 .post ul.social li.feed {
   font-size: 0.9em;
 }
-/* line 477, ../../app/stylesheets/blog.scss */
+/* line 481, ../../app/stylesheets/blog.scss */
 .post ul.social a {
   color: #f88900;
   border-bottom: 1px solid #f88900;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 484, ../../app/stylesheets/blog.scss */
+/* line 488, ../../app/stylesheets/blog.scss */
 .post ul.social_fixed {
   display: block;
   position: fixed;
@@ -647,7 +652,7 @@ body {
   margin: 0 0 0 -95px;
   padding: 0;
 }
-/* line 491, ../../app/stylesheets/blog.scss */
+/* line 495, ../../app/stylesheets/blog.scss */
 .post ul.social_fixed li {
   background-color: #fff;
   list-style: none;
@@ -673,15 +678,17 @@ body {
 /*-----------------------------------------------------------
 					COMMENTS
 -----------------------------------------------------------*/
-/* line 524, ../../app/stylesheets/blog.scss */
+/* line 528, ../../app/stylesheets/blog.scss */
 .comments_canvas {
+  width: 100%;
   float: left;
   background-color: #D3F6FC;
   display: block;
   clear: both;
 }
-/* line 529, ../../app/stylesheets/blog.scss */
+/* line 534, ../../app/stylesheets/blog.scss */
 .comments_canvas h2 {
+  width: 100%;
   overflow: hidden;
   border-bottom: 1px solid #a4a4a4;
   font-size: 1.0em;
@@ -689,7 +696,7 @@ body {
   margin: 0 0 15px 0;
   background-color: #ffffff;
 }
-/* line 536, ../../app/stylesheets/blog.scss */
+/* line 542, ../../app/stylesheets/blog.scss */
 .comments_canvas h2 span.count {
   float: right;
   padding: .1em .5em;
@@ -699,30 +706,30 @@ body {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
-/* line 544, ../../app/stylesheets/blog.scss */
+/* line 550, ../../app/stylesheets/blog.scss */
 .comments_canvas h2.plain {
   margin: 0;
   border-bottom: none;
 }
-/* line 547, ../../app/stylesheets/blog.scss */
+/* line 553, ../../app/stylesheets/blog.scss */
 .comments_canvas h2 img {
   float: right;
   margin-top: 7px;
   margin-right: 2px;
   cursor: pointer;
 }
-/* line 554, ../../app/stylesheets/blog.scss */
+/* line 560, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment, .comments_canvas #post_a_comment {
   margin: 0 12px 0px 12px;
   padding: 5px 0 10px 5px;
 }
-/* line 557, ../../app/stylesheets/blog.scss */
+/* line 563, ../../app/stylesheets/blog.scss */
 .comments_canvas .admin_comment {
   border: 1px solid #79aff8;
   background-color: #ffffff;
   margin-bottom: 10px;
 }
-/* line 562, ../../app/stylesheets/blog.scss */
+/* line 568, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment {
   min-height: 50px;
   margin-top: 0px;
@@ -730,26 +737,26 @@ body {
   border-bottom: 1px dotted #CCCCCC;
   clear: both;
 }
-/* line 568, ../../app/stylesheets/blog.scss */
+/* line 574, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment .icons {
   float: right;
   text-align: right;
 }
-/* line 572, ../../app/stylesheets/blog.scss */
+/* line 578, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment a {
   float: left;
 }
-/* line 576, ../../app/stylesheets/blog.scss */
+/* line 582, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment p {
   margin: 5px 0 0 0;
 }
-/* line 579, ../../app/stylesheets/blog.scss */
+/* line 585, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment img.avatar {
   float: left;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 584, ../../app/stylesheets/blog.scss */
+/* line 590, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment .author {
   color: #AAAAAA;
   font-size: 0.8em;
@@ -757,43 +764,43 @@ body {
 }
 
 /* Comment */
-/* line 593, ../../app/stylesheets/blog.scss */
+/* line 599, ../../app/stylesheets/blog.scss */
 h3 span.date {
   color: #ccc;
   font-weight: normal;
   letter-spacing: -1px;
 }
 
-/* line 599, ../../app/stylesheets/blog.scss */
+/* line 605, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment h3 span.stats {
   float: right;
 }
-/* line 601, ../../app/stylesheets/blog.scss */
+/* line 607, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment h3 span.stats span {
   padding: 0 0 0 5px;
 }
-/* line 603, ../../app/stylesheets/blog.scss */
+/* line 609, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment h3 span.stats .rep {
   vertical-align: text-top;
 }
-/* line 605, ../../app/stylesheets/blog.scss */
+/* line 611, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment h3 span.aux {
   vertical-align: text-bottom;
   cursor: pointer;
 }
-/* line 608, ../../app/stylesheets/blog.scss */
+/* line 614, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment h3 span.aux img {
   padding-right: 5px;
 }
 
-/* line 611, ../../app/stylesheets/blog.scss */
+/* line 617, ../../app/stylesheets/blog.scss */
 .comment-body {
   font-size: 0.9em;
   line-height: 1.3em;
   white-space: pre-wrap;
 }
 
-/* line 618, ../../app/stylesheets/blog.scss */
+/* line 624, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment blockquote {
   display: block;
   color: #666666;
@@ -801,18 +808,19 @@ h3 span.date {
   line-height: 18px;
   margin: 0 40px 0 15px;
 }
-/* line 624, ../../app/stylesheets/blog.scss */
+/* line 630, ../../app/stylesheets/blog.scss */
 .comments_canvas .comment code {
   display: block;
   margin: 0 15px 0 15px;
 }
-/* line 627, ../../app/stylesheets/blog.scss */
+/* line 633, ../../app/stylesheets/blog.scss */
 .comments_canvas #post_a_comment {
+  width: 100%;
   float: left;
   padding: 0;
   /*padding between last comment and comments container*/
 }
-/* line 631, ../../app/stylesheets/blog.scss */
+/* line 638, ../../app/stylesheets/blog.scss */
 .comments_canvas #post_a_comment h2 {
   clear: both;
   padding: 20px 0 0 0;
@@ -820,33 +828,33 @@ h3 span.date {
   margin-left: -12px;
   margin-right: -12px;
 }
-/* line 637, ../../app/stylesheets/blog.scss */
+/* line 644, ../../app/stylesheets/blog.scss */
 .comments_canvas .form-field {
   margin-bottom: 1em;
 }
-/* line 639, ../../app/stylesheets/blog.scss */
+/* line 646, ../../app/stylesheets/blog.scss */
 .comments_canvas .form-field input, .comments_canvas .form-field textarea {
   padding: .25em .5em;
   font: normal 0.9em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
-/* line 643, ../../app/stylesheets/blog.scss */
+/* line 650, ../../app/stylesheets/blog.scss */
 .comments_canvas .form-submit input, .comments_canvas .form-submit span#submit-comment {
   padding: .25em .5em;
   font: normal 0.9em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 /* Post a comment */
-/* line 649, ../../app/stylesheets/blog.scss */
+/* line 656, ../../app/stylesheets/blog.scss */
 .sidebar .form-submit input {
   padding: .25em .5em;
   font: normal 0.9em/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-/* line 654, ../../app/stylesheets/blog.scss */
+/* line 661, ../../app/stylesheets/blog.scss */
 .comments_canvas .form-field textarea#comment_content {
   font-weight: bold;
 }
-/* line 657, ../../app/stylesheets/blog.scss */
+/* line 664, ../../app/stylesheets/blog.scss */
 .comments_canvas .form-submit input, .comments_canvas .form-submit span#submit-comment {
   border: 0;
   background-color: #333;
@@ -859,7 +867,7 @@ h3 span.date {
   margin: 0 0 15px 0;
 }
 
-/* line 668, ../../app/stylesheets/blog.scss */
+/* line 675, ../../app/stylesheets/blog.scss */
 .sidebar .form-submit input {
   border: 0;
   background-color: #333;
@@ -872,41 +880,36 @@ h3 span.date {
   margin: 0 0 15px 0;
 }
 
-/* line 679, ../../app/stylesheets/blog.scss */
+/* line 686, ../../app/stylesheets/blog.scss */
 .comments_canvas .form-submit span#submit-comment {
   padding: 4px 10px 4px 10px;
 }
 
 /* Comment preview*/
-/* line 684, ../../app/stylesheets/blog.scss */
+/* line 691, ../../app/stylesheets/blog.scss */
 #comment_preview_canvas {
   display: none;
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
 }
-/* line 688, ../../app/stylesheets/blog.scss */
+/* line 695, ../../app/stylesheets/blog.scss */
 #comment_preview_canvas .preview_comment_link {
   padding-bottom: 15px;
 }
-/* line 690, ../../app/stylesheets/blog.scss */
+/* line 697, ../../app/stylesheets/blog.scss */
 #comment_preview_canvas .comment-body {
   line-height: 18px;
   clear: both;
 }
-/* line 693, ../../app/stylesheets/blog.scss */
+/* line 700, ../../app/stylesheets/blog.scss */
 #comment_preview_canvas .form-submit {
   margin: 0;
   padding: 0;
   margin-top: 25px;
 }
 
-/* line 698, ../../app/stylesheets/blog.scss */
-#comment_preview #comment_0 {
-  margin: 0;
-}
-
 /*Comment Closed*/
-/* line 703, ../../app/stylesheets/blog.scss */
+/* line 710, ../../app/stylesheets/blog.scss */
 .comments_canvas #comments_closed {
   border-bottom: none;
   color: #333;
@@ -915,14 +918,14 @@ h3 span.date {
 /*-----------------------------------------------------------
 					ARCHIVES
 -----------------------------------------------------------*/
-/* line 712, ../../app/stylesheets/blog.scss */
+/* line 719, ../../app/stylesheets/blog.scss */
 .archives h2 {
   font-size: 28px;
   letter-spacing: -1px;
   line-height: 30px;
   display: block;
 }
-/* line 717, ../../app/stylesheets/blog.scss */
+/* line 724, ../../app/stylesheets/blog.scss */
 .archives h3 {
   font-size: 23px;
   letter-spacing: -1px;
@@ -930,44 +933,44 @@ h3 span.date {
   margin-bottom: 0;
   margin-bottom: 5px;
 }
-/* line 723, ../../app/stylesheets/blog.scss */
+/* line 730, ../../app/stylesheets/blog.scss */
 .archives ul {
   margin: 0;
   padding: 0;
 }
-/* line 726, ../../app/stylesheets/blog.scss */
+/* line 733, ../../app/stylesheets/blog.scss */
 .archives li {
   list-style: none;
   line-height: 12px;
 }
-/* line 729, ../../app/stylesheets/blog.scss */
+/* line 736, ../../app/stylesheets/blog.scss */
 .archives li a {
   color: #000;
 }
-/* line 731, ../../app/stylesheets/blog.scss */
+/* line 738, ../../app/stylesheets/blog.scss */
 .archives li a:hover {
   color: #ffffff !important;
   background-color: #000;
   text-decoration: none;
 }
 
-/* line 736, ../../app/stylesheets/blog.scss */
+/* line 743, ../../app/stylesheets/blog.scss */
 .drafts li a:hover, .users li a:hover {
   color: #000 !important;
   background-color: #fff;
   text-decoration: underline;
 }
 
-/* line 743, ../../app/stylesheets/blog.scss */
+/* line 750, ../../app/stylesheets/blog.scss */
 .archives li a:visited {
   color: #666;
 }
-/* line 745, ../../app/stylesheets/blog.scss */
+/* line 752, ../../app/stylesheets/blog.scss */
 .archives li img {
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 749, ../../app/stylesheets/blog.scss */
+/* line 756, ../../app/stylesheets/blog.scss */
 .archives span.comments, .archives span.latest {
   -moz-border-radius: 3px 3px 3px 3px;
   background-color: #a4a4a4;
@@ -975,7 +978,7 @@ h3 span.date {
   padding: 0.1em 0.5em;
   text-shadow: 0 1px 0 #CCCCCC;
 }
-/* line 755, ../../app/stylesheets/blog.scss */
+/* line 762, ../../app/stylesheets/blog.scss */
 .archives span.comments {
   text-shadow: 0 1px 0 #ffffff;
   color: #666;
@@ -985,27 +988,27 @@ h3 span.date {
 /*-----------------------------------------------------------
 				USERS
 -----------------------------------------------------------*/
-/* line 765, ../../app/stylesheets/blog.scss */
+/* line 772, ../../app/stylesheets/blog.scss */
 .users ul {
   margin: 20px 0 0 0px;
 }
-/* line 767, ../../app/stylesheets/blog.scss */
+/* line 774, ../../app/stylesheets/blog.scss */
 .users label {
   display: block;
   padding-bottom: 5px;
   font-weight: bold;
 }
 
-/* line 772, ../../app/stylesheets/blog.scss */
+/* line 779, ../../app/stylesheets/blog.scss */
 .sidebar .user_management a {
   border-bottom: none;
 }
 
-/* line 776, ../../app/stylesheets/blog.scss */
+/* line 783, ../../app/stylesheets/blog.scss */
 .fieldWithErrors label {
   color: #8A1F11;
 }
-/* line 778, ../../app/stylesheets/blog.scss */
+/* line 785, ../../app/stylesheets/blog.scss */
 .fieldWithErrors input {
   color: #8A1F11;
   background-color: #FBE3E4;
@@ -1015,7 +1018,7 @@ h3 span.date {
 /*-----------------------------------------------------------
 					SPAM
 -----------------------------------------------------------*/
-/* line 787, ../../app/stylesheets/blog.scss */
+/* line 794, ../../app/stylesheets/blog.scss */
 img#spam_grill {
   float: right;
   margin-top: -5em;
@@ -1024,12 +1027,12 @@ img#spam_grill {
 /*-----------------------------------------------------------
 					CREATE POST
 -----------------------------------------------------------*/
-/* line 795, ../../app/stylesheets/blog.scss */
+/* line 802, ../../app/stylesheets/blog.scss */
 .sidebar #title-container {
   margin-top: 13px;
   margin-bottom: 20px;
 }
-/* line 798, ../../app/stylesheets/blog.scss */
+/* line 805, ../../app/stylesheets/blog.scss */
 .sidebar #title-container input {
   width: 520px;
   padding: 3px 4px;
@@ -1040,7 +1043,7 @@ img#spam_grill {
   border: 1px solid #999;
   -moz-border-radius: 6px 6px 6px 6px;
 }
-/* line 807, ../../app/stylesheets/blog.scss */
+/* line 814, ../../app/stylesheets/blog.scss */
 .sidebar #title-container p {
   padding: 10px 0 0 0;
 }
@@ -1048,36 +1051,36 @@ img#spam_grill {
 /*-----------------------------------------------------------
 						WMD
 -----------------------------------------------------------*/
-/* line 814, ../../app/stylesheets/blog.scss */
+/* line 821, ../../app/stylesheets/blog.scss */
 .tags {
   margin-top: 15px;
   margin-bottom: 20px;
 }
 
-/* line 819, ../../app/stylesheets/blog.scss */
+/* line 826, ../../app/stylesheets/blog.scss */
 #wmd-container {
   margin: 0;
 }
-/* line 821, ../../app/stylesheets/blog.scss */
+/* line 828, ../../app/stylesheets/blog.scss */
 #wmd-container textarea {
   font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
   border: 1px solid #999;
   font-size: 90%;
 }
 
-/* line 826, ../../app/stylesheets/blog.scss */
+/* line 833, ../../app/stylesheets/blog.scss */
 #wmd-container textarea {
   width: 520px;
 }
 
-/* line 831, ../../app/stylesheets/blog.scss */
+/* line 838, ../../app/stylesheets/blog.scss */
 #wmd-container textarea {
   padding: 3px;
   height: 200px;
   line-height: 1.2;
 }
 
-/* line 836, ../../app/stylesheets/blog.scss */
+/* line 843, ../../app/stylesheets/blog.scss */
 .wmd-spacer {
   width: 1px;
   height: 20px;
@@ -1091,7 +1094,7 @@ img#spam_grill {
 /*-----------------------------------------------------------
 LOCALIZABLE (NON-IMAGE) BUTTONS
 -----------------------------------------------------------*/
-/* line 849, ../../app/stylesheets/blog.scss */
+/* line 856, ../../app/stylesheets/blog.scss */
 div.button {
   /* Ensure the keyboard focus outline can still be seen */
   overflow: hidden;
@@ -1099,7 +1102,7 @@ div.button {
   margin-top: -1px;
   padding: 1px;
 }
-/* line 855, ../../app/stylesheets/blog.scss */
+/* line 862, ../../app/stylesheets/blog.scss */
 div.button a {
   background: url("../images/button_left.gif") 0 0 no-repeat !important;
   /* !important to overrule background: none on a:hover. Otherwise the default hover color bleeds through */
@@ -1115,7 +1118,7 @@ div.button a {
   text-shadow: 0 0 1px #ffffff;
   text-wrap: none;
 }
-/* line 869, ../../app/stylesheets/blog.scss */
+/* line 876, ../../app/stylesheets/blog.scss */
 div.button a:hover {
   background: url("../images/button_left.gif") 0 0 no-repeat !important;
   /* !important to overrule background: none on a:hover. Otherwise the default hover color bleeds through */
@@ -1131,7 +1134,7 @@ div.button a:hover {
   text-shadow: 0 0 1px #ffffff;
   text-wrap: none;
 }
-/* line 883, ../../app/stylesheets/blog.scss */
+/* line 890, ../../app/stylesheets/blog.scss */
 div.button a span {
   background: url("../images/button_right.gif") 100% 0 no-repeat;
   color: #000000;
@@ -1139,19 +1142,19 @@ div.button a span {
   padding: 0px 12px 3px 0;
   line-height: 29px;
 }
-/* line 889, ../../app/stylesheets/blog.scss */
+/* line 896, ../../app/stylesheets/blog.scss */
 div.button a:active {
   background-position: 0 -32px !important;
 }
-/* line 891, ../../app/stylesheets/blog.scss */
+/* line 898, ../../app/stylesheets/blog.scss */
 div.button a:active span {
   background-position: 100% -32px !important;
 }
-/* line 893, ../../app/stylesheets/blog.scss */
+/* line 900, ../../app/stylesheets/blog.scss */
 div.button a.disabled {
   background-image: url("../images/add_button_left_disabled.gif");
 }
-/* line 895, ../../app/stylesheets/blog.scss */
+/* line 902, ../../app/stylesheets/blog.scss */
 div.button a.disabled span {
   color: #555555;
 }
@@ -1163,74 +1166,74 @@ div.button a.disabled span {
 /*
   IR_Black style (c) Vasily Mikhailitchenko <vaskas@programica.ru>
 */
-/* line 907, ../../app/stylesheets/blog.scss */
+/* line 914, ../../app/stylesheets/blog.scss */
 pre code {
   display: block;
   padding: 0.5em;
   background: #203040;
   color: #f8f8f8;
 }
-/* line 912, ../../app/stylesheets/blog.scss */
+/* line 919, ../../app/stylesheets/blog.scss */
 pre .shebang, pre .comment, pre .template_comment, pre .javadoc {
   color: #7c7c7c;
 }
-/* line 914, ../../app/stylesheets/blog.scss */
+/* line 921, ../../app/stylesheets/blog.scss */
 pre .keyword, pre .tag, pre .ruby .function .keyword, pre .tex .command {
   color: #96CBFE;
 }
-/* line 916, ../../app/stylesheets/blog.scss */
+/* line 923, ../../app/stylesheets/blog.scss */
 pre .function .keyword, pre .sub .keyword, pre .method, pre .list .title {
   color: #FFFFB6;
 }
-/* line 918, ../../app/stylesheets/blog.scss */
+/* line 925, ../../app/stylesheets/blog.scss */
 pre .string, pre .tag .value, pre .cdata, pre .filter .argument, pre .attr_selector, pre .apache .cbracket, pre .date {
   color: #A8FF60;
 }
-/* line 920, ../../app/stylesheets/blog.scss */
+/* line 927, ../../app/stylesheets/blog.scss */
 pre .subst {
   color: #DAEFA3;
 }
-/* line 922, ../../app/stylesheets/blog.scss */
+/* line 929, ../../app/stylesheets/blog.scss */
 pre .regexp {
   color: #E9C062;
 }
-/* line 924, ../../app/stylesheets/blog.scss */
+/* line 931, ../../app/stylesheets/blog.scss */
 pre .function .title, pre .sub .identifier, pre .pi, pre .decorator, pre .ini .title, pre .tex .special, pre .class .title, pre .constant, pre .smalltalk .class, pre .javadoctag, pre .yardoctag, pre .phpdoc, pre .nginx .built_in {
   color: #FFFFB6;
 }
-/* line 926, ../../app/stylesheets/blog.scss */
+/* line 933, ../../app/stylesheets/blog.scss */
 pre .symbol {
   color: #C6C5FE;
 }
-/* line 929, ../../app/stylesheets/blog.scss */
+/* line 936, ../../app/stylesheets/blog.scss */
 pre .ruby .symbol .string, pre .ruby .symbol .keyword, pre .ruby .symbol .keymethods {
   color: #C6C5FE;
 }
-/* line 931, ../../app/stylesheets/blog.scss */
+/* line 938, ../../app/stylesheets/blog.scss */
 pre .number, pre .variable, pre .vbscript, pre .literal {
   color: #C6C5FE;
 }
-/* line 934, ../../app/stylesheets/blog.scss */
+/* line 941, ../../app/stylesheets/blog.scss */
 pre .css .keyword {
   color: #96CBFE;
 }
-/* line 936, ../../app/stylesheets/blog.scss */
+/* line 943, ../../app/stylesheets/blog.scss */
 pre .css .rule .keyword, pre .css .id {
   color: #FFFFB6;
 }
-/* line 938, ../../app/stylesheets/blog.scss */
+/* line 945, ../../app/stylesheets/blog.scss */
 pre .css .class {
   color: #FFF;
 }
-/* line 940, ../../app/stylesheets/blog.scss */
+/* line 947, ../../app/stylesheets/blog.scss */
 pre .hexcolor {
   color: #C6C5FE;
 }
-/* line 942, ../../app/stylesheets/blog.scss */
+/* line 949, ../../app/stylesheets/blog.scss */
 pre .number {
   color: #FF73FD;
 }
-/* line 944, ../../app/stylesheets/blog.scss */
+/* line 951, ../../app/stylesheets/blog.scss */
 pre .tex .formula {
   opacity: 0.7;
 }
@@ -1238,43 +1241,43 @@ pre .tex .formula {
 /*-----------------------------------------------------------
 					PAGINATION
 -----------------------------------------------------------*/
-/* line 951, ../../app/stylesheets/blog.scss */
+/* line 958, ../../app/stylesheets/blog.scss */
 .pagination {
   background: white;
   font-size: 0.9em;
   text-align: center;
 }
-/* line 955, ../../app/stylesheets/blog.scss */
+/* line 962, ../../app/stylesheets/blog.scss */
 .pagination a, .pagination span, .pagination em {
   padding: .2em .5em;
   display: block;
   float: left;
   margin-right: 1px;
 }
-/* line 960, ../../app/stylesheets/blog.scss */
+/* line 967, ../../app/stylesheets/blog.scss */
 .pagination span.disabled {
   color: #999;
   border: 1px solid #a4a4a4;
 }
-/* line 963, ../../app/stylesheets/blog.scss */
+/* line 970, ../../app/stylesheets/blog.scss */
 .pagination em {
   font-weight: bold;
   background: #2E6AB1;
   color: white;
   border: 1px solid #2E6AB1;
 }
-/* line 968, ../../app/stylesheets/blog.scss */
+/* line 975, ../../app/stylesheets/blog.scss */
 .pagination a {
   text-decoration: none;
   color: #105CB6;
   border: 1px solid #9AAFE5;
 }
-/* line 972, ../../app/stylesheets/blog.scss */
+/* line 979, ../../app/stylesheets/blog.scss */
 .pagination a:hover, .pagination a:focus {
   color: #003;
   border-color: #003;
 }
-/* line 975, ../../app/stylesheets/blog.scss */
+/* line 982, ../../app/stylesheets/blog.scss */
 .pagination .page_info {
   background: #2E6AB1;
   color: white;
@@ -1283,13 +1286,13 @@ pre .tex .formula {
   margin-bottom: .3em;
   text-align: center;
 }
-/* line 982, ../../app/stylesheets/blog.scss */
+/* line 989, ../../app/stylesheets/blog.scss */
 .pagination .page_info b {
   color: #003;
   background: #6aa6ed;
   padding: .1em .25em;
 }
-/* line 986, ../../app/stylesheets/blog.scss */
+/* line 993, ../../app/stylesheets/blog.scss */
 .pagination:after {
   content: ".";
   display: block;
@@ -1301,7 +1304,7 @@ pre .tex .formula {
 /*-----------------------------------------------------------
 					TIPSY
 -----------------------------------------------------------*/
-/* line 998, ../../app/stylesheets/blog.scss */
+/* line 1005, ../../app/stylesheets/blog.scss */
 .tipsy {
   padding: 5px;
   font-size: 10px;
@@ -1309,7 +1312,7 @@ pre .tex .formula {
   z-index: 100000;
 }
 
-/* line 1004, ../../app/stylesheets/blog.scss */
+/* line 1011, ../../app/stylesheets/blog.scss */
 .tipsy-inner {
   padding: 5px 8px 4px 8px;
   background-color: black;
@@ -1321,7 +1324,7 @@ pre .tex .formula {
   -webkit-border-radius: 3px;
 }
 
-/* line 1014, ../../app/stylesheets/blog.scss */
+/* line 1021, ../../app/stylesheets/blog.scss */
 .tipsy-arrow {
   position: absolute;
   background: url("../images/tipsy.gif") no-repeat top left;
@@ -1329,26 +1332,26 @@ pre .tex .formula {
   height: 5px;
 }
 
-/* line 1020, ../../app/stylesheets/blog.scss */
+/* line 1027, ../../app/stylesheets/blog.scss */
 .tipsy-n .tipsy-arrow {
   top: 0;
   left: 50%;
   margin-left: -4px;
 }
 
-/* line 1025, ../../app/stylesheets/blog.scss */
+/* line 1032, ../../app/stylesheets/blog.scss */
 .tipsy-nw .tipsy-arrow {
   top: 0;
   left: 10px;
 }
 
-/* line 1029, ../../app/stylesheets/blog.scss */
+/* line 1036, ../../app/stylesheets/blog.scss */
 .tipsy-ne .tipsy-arrow {
   top: 0;
   right: 10px;
 }
 
-/* line 1033, ../../app/stylesheets/blog.scss */
+/* line 1040, ../../app/stylesheets/blog.scss */
 .tipsy-s .tipsy-arrow {
   bottom: 0;
   left: 50%;
@@ -1356,21 +1359,21 @@ pre .tex .formula {
   background-position: bottom left;
 }
 
-/* line 1039, ../../app/stylesheets/blog.scss */
+/* line 1046, ../../app/stylesheets/blog.scss */
 .tipsy-sw .tipsy-arrow {
   bottom: 0;
   left: 10px;
   background-position: bottom left;
 }
 
-/* line 1044, ../../app/stylesheets/blog.scss */
+/* line 1051, ../../app/stylesheets/blog.scss */
 .tipsy-se .tipsy-arrow {
   bottom: 0;
   right: 10px;
   background-position: bottom left;
 }
 
-/* line 1049, ../../app/stylesheets/blog.scss */
+/* line 1056, ../../app/stylesheets/blog.scss */
 .tipsy-e .tipsy-arrow {
   top: 50%;
   margin-top: -4px;
@@ -1380,7 +1383,7 @@ pre .tex .formula {
   background-position: top right;
 }
 
-/* line 1057, ../../app/stylesheets/blog.scss */
+/* line 1064, ../../app/stylesheets/blog.scss */
 .tipsy-w .tipsy-arrow {
   top: 50%;
   margin-top: -4px;
@@ -1389,12 +1392,12 @@ pre .tex .formula {
   height: 9px;
 }
 
-/* line 1063, ../../app/stylesheets/blog.scss */
+/* line 1070, ../../app/stylesheets/blog.scss */
 .socialize {
   height: 60px;
   margin-top: 5px;
 }
-/* line 1066, ../../app/stylesheets/blog.scss */
+/* line 1073, ../../app/stylesheets/blog.scss */
 .socialize a {
   float: left;
   margin-right: 3px;
