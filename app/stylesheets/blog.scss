@@ -434,11 +434,11 @@ body {
       height: 60px;
       margin-top: -75px;
       margin-left: 415px; }
-    code {
-      display: block;
+    //code {
+      //display: block;
       //margin: 1em 2em;
-      padding: 1em 1.5em;
-      white-space: pre-wrap; }
+      //padding: 1em 1.5em;
+      //white-space: pre-wrap; }
     ul li {
       margin: 0 .8em .5em;
       list-style-type: circle; }
@@ -913,7 +913,10 @@ div.button {
 pre {
   code {
     display: block;
-    padding: 0.5em;
+    margin: 0;
+    padding: 1em;
+    padding: 1em 1.5em;
+    overflow: auto;
     background: #203040;
     color: #f8f8f8; }
   .shebang, .comment, .template_comment, .javadoc {

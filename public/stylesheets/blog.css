@@ -574,12 +574,6 @@ body {
   margin-top: -75px;
   margin-left: 415px;
 }
-/* line 437, ../../app/stylesheets/blog.scss */
-.post .entry code {
-  display: block;
-  padding: 1em 1.5em;
-  white-space: pre-wrap;
-}
 /* line 442, ../../app/stylesheets/blog.scss */
 .post .entry ul li {
   margin: 0 .8em .5em;
@@ -1169,71 +1163,74 @@ div.button a.disabled span {
 /* line 914, ../../app/stylesheets/blog.scss */
 pre code {
   display: block;
-  padding: 0.5em;
+  margin: 0;
+  padding: 1em;
+  padding: 1em 1.5em;
+  overflow: auto;
   background: #203040;
   color: #f8f8f8;
 }
-/* line 919, ../../app/stylesheets/blog.scss */
+/* line 922, ../../app/stylesheets/blog.scss */
 pre .shebang, pre .comment, pre .template_comment, pre .javadoc {
   color: #7c7c7c;
 }
-/* line 921, ../../app/stylesheets/blog.scss */
+/* line 924, ../../app/stylesheets/blog.scss */
 pre .keyword, pre .tag, pre .ruby .function .keyword, pre .tex .command {
   color: #96CBFE;
 }
-/* line 923, ../../app/stylesheets/blog.scss */
+/* line 926, ../../app/stylesheets/blog.scss */
 pre .function .keyword, pre .sub .keyword, pre .method, pre .list .title {
   color: #FFFFB6;
 }
-/* line 925, ../../app/stylesheets/blog.scss */
+/* line 928, ../../app/stylesheets/blog.scss */
 pre .string, pre .tag .value, pre .cdata, pre .filter .argument, pre .attr_selector, pre .apache .cbracket, pre .date {
   color: #A8FF60;
 }
-/* line 927, ../../app/stylesheets/blog.scss */
+/* line 930, ../../app/stylesheets/blog.scss */
 pre .subst {
   color: #DAEFA3;
 }
-/* line 929, ../../app/stylesheets/blog.scss */
+/* line 932, ../../app/stylesheets/blog.scss */
 pre .regexp {
   color: #E9C062;
 }
-/* line 931, ../../app/stylesheets/blog.scss */
+/* line 934, ../../app/stylesheets/blog.scss */
 pre .function .title, pre .sub .identifier, pre .pi, pre .decorator, pre .ini .title, pre .tex .special, pre .class .title, pre .constant, pre .smalltalk .class, pre .javadoctag, pre .yardoctag, pre .phpdoc, pre .nginx .built_in {
   color: #FFFFB6;
 }
-/* line 933, ../../app/stylesheets/blog.scss */
+/* line 936, ../../app/stylesheets/blog.scss */
 pre .symbol {
   color: #C6C5FE;
 }
-/* line 936, ../../app/stylesheets/blog.scss */
+/* line 939, ../../app/stylesheets/blog.scss */
 pre .ruby .symbol .string, pre .ruby .symbol .keyword, pre .ruby .symbol .keymethods {
   color: #C6C5FE;
 }
-/* line 938, ../../app/stylesheets/blog.scss */
+/* line 941, ../../app/stylesheets/blog.scss */
 pre .number, pre .variable, pre .vbscript, pre .literal {
   color: #C6C5FE;
 }
-/* line 941, ../../app/stylesheets/blog.scss */
+/* line 944, ../../app/stylesheets/blog.scss */
 pre .css .keyword {
   color: #96CBFE;
 }
-/* line 943, ../../app/stylesheets/blog.scss */
+/* line 946, ../../app/stylesheets/blog.scss */
 pre .css .rule .keyword, pre .css .id {
   color: #FFFFB6;
 }
-/* line 945, ../../app/stylesheets/blog.scss */
+/* line 948, ../../app/stylesheets/blog.scss */
 pre .css .class {
   color: #FFF;
 }
-/* line 947, ../../app/stylesheets/blog.scss */
+/* line 950, ../../app/stylesheets/blog.scss */
 pre .hexcolor {
   color: #C6C5FE;
 }
-/* line 949, ../../app/stylesheets/blog.scss */
+/* line 952, ../../app/stylesheets/blog.scss */
 pre .number {
   color: #FF73FD;
 }
-/* line 951, ../../app/stylesheets/blog.scss */
+/* line 954, ../../app/stylesheets/blog.scss */
 pre .tex .formula {
   opacity: 0.7;
 }
@@ -1241,43 +1238,43 @@ pre .tex .formula {
 /*-----------------------------------------------------------
 					PAGINATION
 -----------------------------------------------------------*/
-/* line 958, ../../app/stylesheets/blog.scss */
+/* line 961, ../../app/stylesheets/blog.scss */
 .pagination {
   background: white;
   font-size: 0.9em;
   text-align: center;
 }
-/* line 962, ../../app/stylesheets/blog.scss */
+/* line 965, ../../app/stylesheets/blog.scss */
 .pagination a, .pagination span, .pagination em {
   padding: .2em .5em;
   display: block;
   float: left;
   margin-right: 1px;
 }
-/* line 967, ../../app/stylesheets/blog.scss */
+/* line 970, ../../app/stylesheets/blog.scss */
 .pagination span.disabled {
   color: #999;
   border: 1px solid #a4a4a4;
 }
-/* line 970, ../../app/stylesheets/blog.scss */
+/* line 973, ../../app/stylesheets/blog.scss */
 .pagination em {
   font-weight: bold;
   background: #2E6AB1;
   color: white;
   border: 1px solid #2E6AB1;
 }
-/* line 975, ../../app/stylesheets/blog.scss */
+/* line 978, ../../app/stylesheets/blog.scss */
 .pagination a {
   text-decoration: none;
   color: #105CB6;
   border: 1px solid #9AAFE5;
 }
-/* line 979, ../../app/stylesheets/blog.scss */
+/* line 982, ../../app/stylesheets/blog.scss */
 .pagination a:hover, .pagination a:focus {
   color: #003;
   border-color: #003;
 }
-/* line 982, ../../app/stylesheets/blog.scss */
+/* line 985, ../../app/stylesheets/blog.scss */
 .pagination .page_info {
   background: #2E6AB1;
   color: white;
@@ -1286,13 +1283,13 @@ pre .tex .formula {
   margin-bottom: .3em;
   text-align: center;
 }
-/* line 989, ../../app/stylesheets/blog.scss */
+/* line 992, ../../app/stylesheets/blog.scss */
 .pagination .page_info b {
   color: #003;
   background: #6aa6ed;
   padding: .1em .25em;
 }
-/* line 993, ../../app/stylesheets/blog.scss */
+/* line 996, ../../app/stylesheets/blog.scss */
 .pagination:after {
   content: ".";
   display: block;
@@ -1304,7 +1301,7 @@ pre .tex .formula {
 /*-----------------------------------------------------------
 					TIPSY
 -----------------------------------------------------------*/
-/* line 1005, ../../app/stylesheets/blog.scss */
+/* line 1008, ../../app/stylesheets/blog.scss */
 .tipsy {
   padding: 5px;
   font-size: 10px;
@@ -1312,7 +1309,7 @@ pre .tex .formula {
   z-index: 100000;
 }
 
-/* line 1011, ../../app/stylesheets/blog.scss */
+/* line 1014, ../../app/stylesheets/blog.scss */
 .tipsy-inner {
   padding: 5px 8px 4px 8px;
   background-color: black;
@@ -1324,7 +1321,7 @@ pre .tex .formula {
   -webkit-border-radius: 3px;
 }
 
-/* line 1021, ../../app/stylesheets/blog.scss */
+/* line 1024, ../../app/stylesheets/blog.scss */
 .tipsy-arrow {
   position: absolute;
   background: url("../images/tipsy.gif") no-repeat top left;
@@ -1332,26 +1329,26 @@ pre .tex .formula {
   height: 5px;
 }
 
-/* line 1027, ../../app/stylesheets/blog.scss */
+/* line 1030, ../../app/stylesheets/blog.scss */
 .tipsy-n .tipsy-arrow {
   top: 0;
   left: 50%;
   margin-left: -4px;
 }
 
-/* line 1032, ../../app/stylesheets/blog.scss */
+/* line 1035, ../../app/stylesheets/blog.scss */
 .tipsy-nw .tipsy-arrow {
   top: 0;
   left: 10px;
 }
 
-/* line 1036, ../../app/stylesheets/blog.scss */
+/* line 1039, ../../app/stylesheets/blog.scss */
 .tipsy-ne .tipsy-arrow {
   top: 0;
   right: 10px;
 }
 
-/* line 1040, ../../app/stylesheets/blog.scss */
+/* line 1043, ../../app/stylesheets/blog.scss */
 .tipsy-s .tipsy-arrow {
   bottom: 0;
   left: 50%;
@@ -1359,21 +1356,21 @@ pre .tex .formula {
   background-position: bottom left;
 }
 
-/* line 1046, ../../app/stylesheets/blog.scss */
+/* line 1049, ../../app/stylesheets/blog.scss */
 .tipsy-sw .tipsy-arrow {
   bottom: 0;
   left: 10px;
   background-position: bottom left;
 }
 
-/* line 1051, ../../app/stylesheets/blog.scss */
+/* line 1054, ../../app/stylesheets/blog.scss */
 .tipsy-se .tipsy-arrow {
   bottom: 0;
   right: 10px;
   background-position: bottom left;
 }
 
-/* line 1056, ../../app/stylesheets/blog.scss */
+/* line 1059, ../../app/stylesheets/blog.scss */
 .tipsy-e .tipsy-arrow {
   top: 50%;
   margin-top: -4px;
@@ -1383,7 +1380,7 @@ pre .tex .formula {
   background-position: top right;
 }
 
-/* line 1064, ../../app/stylesheets/blog.scss */
+/* line 1067, ../../app/stylesheets/blog.scss */
 .tipsy-w .tipsy-arrow {
   top: 50%;
   margin-top: -4px;
@@ -1392,12 +1389,12 @@ pre .tex .formula {
   height: 9px;
 }
 
-/* line 1070, ../../app/stylesheets/blog.scss */
+/* line 1073, ../../app/stylesheets/blog.scss */
 .socialize {
   height: 60px;
   margin-top: 5px;
 }
-/* line 1073, ../../app/stylesheets/blog.scss */
+/* line 1076, ../../app/stylesheets/blog.scss */
 .socialize a {
   float: left;
   margin-right: 3px;
