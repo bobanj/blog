@@ -6,7 +6,7 @@
     %meta{:name => "description", :content => yield(:description).blank? ? DESCRIPTION : yield(:description) }
     %meta{:name => "keywords", :content => yield(:keywords).blank? ? KEYWORDS : yield(:keywords)}
     %link{ :href => "/favicon.ico", :rel => "shortcut icon" }
-    %link{:rel => 'index', :title => TITLE, :href => HOME_PAGE }
+    %link{:rel => 'index', :title => AUTHOR, :href => HOME_PAGE }
     %title= yield(:title).blank? ? TITLE : yield(:title)
     = yield :robots
     = auto_discovery_link_tag(:rss, FEED_BURNER_URL)
@@ -42,7 +42,7 @@
               = current_user.name
     .header
       - if !current_user
-        %h1= TITLE
+        %h1= AUTHOR
     .wrapper
       .content
         = yield
@@ -51,7 +51,7 @@
     .footer
       %p
         Content copyright © 2011
-        %a{ :href => "#" }= TITLE
+        %a{ :href => "/" }= TITLE
         \.
         %span
           %a{ :href => "http://github.com/bobanj/blog" }GitHub
