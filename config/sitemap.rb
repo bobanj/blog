@@ -1,6 +1,6 @@
 # Set the host name for URL creation
 SitemapGenerator::Sitemap.default_host = HOME_PAGE
-
+SitemapGenerator::Sitemap.yahoo_app_id = YAHOO_APP_ID
 SitemapGenerator::Sitemap.add_links do |sitemap|
   posts = Post.all(:select => "title, id, updated_at", :order => "updated_at DESC", :limit => 50000)
   posts.each do |post|
