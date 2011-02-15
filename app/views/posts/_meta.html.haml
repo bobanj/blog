@@ -1,5 +1,5 @@
 - if !post.commentable
-  %a{:href => '#comments'} Comments are closed
+  %span Comments are closed
 - elsif post.commentable && post.comments.count == 0
   = link_to "Post a comment", post_path(post, :anchor => "comments")
 - else

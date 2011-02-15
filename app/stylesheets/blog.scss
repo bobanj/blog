@@ -370,7 +370,12 @@ body {
       font-weight: bold;
       border-bottom: 1px solid $header;
       color: $links_color;
-      text-decoration: none; } }
+      text-decoration: none; }
+    span {
+      font-weight: bold;
+      color: $links_color;
+      text-decoration: none; }
+      }
   .entry {
     p {
       line-height: 21px;
