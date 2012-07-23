@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 gem 'rails', '3.2.6'
+gem 'unicorn'
 #gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'mysql2'
 gem 'compass'
