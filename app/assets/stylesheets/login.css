@@ -1,0 +1,171 @@
+/* line 1, ../../app/stylesheets/login.scss */
+body {
+  background-color: white;
+  color: #0F90A7;
+  font-size: 95%;
+  font-family: georgia;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 9, ../../app/stylesheets/login.scss */
+h3 {
+  font-size: 130%;
+  margin-top: 1.25em;
+  margin-bottom: .5em;
+}
+
+/* line 14, ../../app/stylesheets/login.scss */
+.hidden {
+  display: none;
+}
+
+/* line 17, ../../app/stylesheets/login.scss */
+.clear {
+  font-size: 1px;
+  clear: both;
+}
+
+/* line 21, ../../app/stylesheets/login.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* main layout */
+/* line 26, ../../app/stylesheets/login.scss */
+#header {
+  background-color: #75D9EB;
+  color: white;
+  width: 100%;
+  padding-top: 1px;
+  padding-bottom: 20px;
+}
+/* line 32, ../../app/stylesheets/login.scss */
+#header a {
+  background-color: inherit;
+  color: white;
+  text-decoration: none;
+}
+/* line 36, ../../app/stylesheets/login.scss */
+#header a:visited {
+  background-color: inherit;
+  color: white;
+  text-decoration: none;
+}
+/* line 40, ../../app/stylesheets/login.scss */
+#header a:hover, #header a:visited:hover {
+  text-decoration: underline;
+}
+
+/* line 43, ../../app/stylesheets/login.scss */
+#site-title {
+  font-size: 150%;
+  font-weight: bold;
+  margin-top: 19px;
+  margin-left: 20px;
+}
+
+/* line 49, ../../app/stylesheets/login.scss */
+#site-subtitle {
+  color: #0F90A7;
+  font-size: 90%;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+/* line 55, ../../app/stylesheets/login.scss */
+#main {
+  float: left;
+  width: 100%;
+}
+
+/* line 59, ../../app/stylesheets/login.scss */
+#content {
+  font-size: 95%;
+  padding: 20px;
+}
+
+/* line 63, ../../app/stylesheets/login.scss */
+#footer {
+  color: #999;
+  background-color: #f7f7f7;
+  border-top: 1px solid #eaeaea;
+  font-size: 80%;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+/* line 72, ../../app/stylesheets/login.scss */
+#footer p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* form elements */
+/* line 78, ../../app/stylesheets/login.scss */
+#content {
+  text-align: center;
+}
+/* line 79, ../../app/stylesheets/login.scss */
+#content .buttons {
+  font-size: 80%;
+  margin-top: 2.5em;
+}
+/* line 82, ../../app/stylesheets/login.scss */
+#content .button {
+  font-size: 150%;
+}
+/* line 85, ../../app/stylesheets/login.scss */
+#content #login {
+  background-color: #75D9EB;
+  border: 5px solid #D3F6FC;
+  text-align: left;
+  margin: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 20px;
+  padding-right: 22px;
+  position: relative;
+  width: 24.5em;
+  color: #181818;
+}
+/* line 97, ../../app/stylesheets/login.scss */
+#content #login h1 {
+  font-size: 140%;
+  margin: 0;
+  margin-top: 13px;
+}
+/* line 101, ../../app/stylesheets/login.scss */
+#content #login table {
+  width: 100%;
+  margin: 15px 0 10px 0;
+}
+/* line 104, ../../app/stylesheets/login.scss */
+#content #login table td {
+  text-align: left;
+  padding: 6px 0;
+}
+/* line 107, ../../app/stylesheets/login.scss */
+#content #login table td.label {
+  width: 6em;
+}
+/* line 109, ../../app/stylesheets/login.scss */
+#content #login table td.field input.textbox {
+  font-size: 100%;
+  width: 98%;
+}
+/* line 112, ../../app/stylesheets/login.scss */
+#content #login table td.checkbox {
+  font-size: 85%;
+}
+/* line 114, ../../app/stylesheets/login.scss */
+#content #login table td.buttons {
+  text-align: right;
+}
+/* line 116, ../../app/stylesheets/login.scss */
+#content #login table td.buttons input {
+  font-size: 140%;
+}
+
+/*Login Box Styling*/
