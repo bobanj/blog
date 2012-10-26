@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
-gem 'rails', '3.2.6'
+gem 'rails', '3.2.8'
 gem 'unicorn'
 #gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'mysql2'
@@ -13,9 +13,11 @@ gem 'authlogic'
 gem 'will_paginate'
 gem 'twitter'
 gem 'sitemap_generator'
+gem 'gravatar'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
+  gem 'compass-rails'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes

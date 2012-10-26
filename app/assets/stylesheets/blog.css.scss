@@ -1,3 +1,12 @@
+
+/*-----------------------------------------------------------
+						VARS
+-----------------------------------------------------------*/
+@import "compass/css3";
+$links_color: #3f8cf5;
+$header: #79aff8;
+$light_text: #a4a4a4;
+
 /*-----------------------------------------------------------
 						RESET
 -----------------------------------------------------------*/
@@ -10,9 +19,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font-size: 100%;
   vertical-align: baseline;
   background-color: transparent; }
+
 .clear{
   clear: both;
 }
+
 body {
   line-height: 1; }
 
@@ -103,7 +114,10 @@ body {
 .wrapper, .footer, .header {
   width: 860px;
   margin: 0 auto;
-  text-align: left; }
+  text-align: left;
+  //@include border-radius(8px);
+  //@include box-shadow(gray, 2px, 2px, 10px);
+  }
 
 .content {
   float: left;
@@ -114,8 +128,13 @@ body {
   width: 270px;
   margin: 12px 0 0 0; }
 
+.html5_logo{
+  margin-top: 10px;
+}
+
 .footer {
-  border-top: 1px solid #DDD;
+  border-top: 1px solid $light_text;
+  margin-top: 5px;
   clear: both;
   font-size: 12px;
   p {
@@ -126,7 +145,7 @@ body {
 .header {
   margin-bottom: 15px;
   text-indent: -10000px;
-  background-color: #75D9EB;
+  background-color: $header;
   font-size: 0.3em; }
 
 /*-----------------------------------------------------------
@@ -134,7 +153,7 @@ body {
 -----------------------------------------------------------*/
 
 .adminbar {
-  background: url("../images/adminbar.png") left top repeat-x;
+  background: image-url("adminbar.png") left top repeat-x;
   height: 30px;
   a {
     border: medium none;
@@ -146,12 +165,12 @@ body {
     text-decoration: none !important;
     text-shadow: 0 -1px 0 #333333;
     &:hover {
-      background: url("../images/adminhover.png") left top repeat-x;
+      background: image-url("adminhover.png") left top repeat-x;
       height: 30px; }
     &.closed {
-      color: #ddd;
+      color: $light_text;
       &:hover {
-        color: #ddd; } }
+        color: $light_text; } }
     &.open {
       color: #78D261;
       text-shadow: 0 -1px 0 #555555;
@@ -159,10 +178,10 @@ body {
         color: #78D261;
         text-shadow: 0 -1px 0 #555555; } }
     &.delete {
-      color: #ddd;
+      color: $light_text;
       text-shadow: 0 -1px 0 #555555;
       &:hover {
-        color: #ddd;
+        color: $light_text;
         text-shadow: 0 -1px 0 #555555; } } }
   ul {
     margin: 0;
@@ -212,8 +231,8 @@ body {
     }
     a {
       font-weight: bold;
-      border-bottom: 1px solid #75D9EB;
-      color: #00ADEC;
+      border-bottom: 1px solid $header;
+      color: $links_color;
       text-decoration: none;
       &:hover {}
       &.image {
@@ -225,15 +244,15 @@ body {
     padding: 0 0 0.1em;
     h2 {
       margin: 0 0 .7em;
-      color: #75D9EB;
+      color: $header;
       font-size: 1.2em; }
     p {
       line-height: 1.8;
       font-size: .9em; }
     a {
       font-weight: bold;
-      border-bottom: 1px solid #75D9EB;
-      color: #00ADEC;
+      border-bottom: 1px solid $header;
+      color: $links_color;
       text-decoration: none;
       &:hover {}
       &:image {
@@ -256,7 +275,7 @@ body {
       font-size: 0.9em;
       margin-top: 0.9em;
       color: #7c7c7c;
-      background: white url("../images/search.png") no-repeat 0.5em center; } } }
+      background: white image-url("search.png") no-repeat 0.5em center; } } }
 
 /* Archive and Google Search */
 /*.sidebar div#search form fieldset {
@@ -270,7 +289,7 @@ body {
   a {
     display: inline;
     padding-left: 1.9em;
-    background: url("../images/rss6.png") no-repeat left center;
+    background: image-url("rss6.png") no-repeat left center;
     color: #F47719;
     text-decoration: none;
     font-weight: bold;
@@ -311,26 +330,30 @@ body {
   clear: both;
   h2 {
     font-size: 28px;
-    color: #00ADEC;
-    letter-spacing: -1px;
+    color: $links_color;
+    letter-spacing: 0px;
     line-height: 30px;
     a {
-      color: #00ADEC;
+      color: $links_color;
       text-decoration: none;
       &:hover {
-        color: #00ADEC;
+        color: $links_color;
         text-decoration: underline; }
       &.article {
         text-decoration: none; } }
     span {
       &.author {
         font-size: 24px;
-        color: #75D9EB;
-        overflow: visible; }
+        color: $header;
+        overflow: visible;
+      }
       &.date {
         font-size: 24px;
         font-weight: normal;
-        color: #ddd; } } }
+        color: #a4a4a4;
+      }
+    }
+  }
   span.nobreak {
     white-space: nowrap;
     display: inline-block;
@@ -339,15 +362,20 @@ body {
     margin: -35px 0 20px 0;
     color: #999;
     font-size: .9em;
-    background: url("../images/comment.gif") left center no-repeat;
+    background: image-url("comments.png") left center no-repeat;
     padding: 3px 0 0 29px;
     vertical-align: middle;
     height: 24px;
     a {
       font-weight: bold;
-      border-bottom: 1px solid #75D9EB;
-      color: #00ADEC;
-      text-decoration: none; } }
+      border-bottom: 1px solid $header;
+      color: $links_color;
+      text-decoration: none; }
+    span {
+      font-weight: bold;
+      color: $links_color;
+      text-decoration: none; }
+      }
   .entry {
     p {
       line-height: 21px;
@@ -357,7 +385,7 @@ body {
       color: #DC143C;
       font-size: 1.0em; }
     h3 {
-      color: #00ADEC;
+      color: $links_color;
       font-size: 1.2em; }
     h4 {
       margin: 1.5em 0 .6em;
@@ -365,8 +393,8 @@ body {
       font-size: 1.1em; }
     a {
       font-weight: bold;
-      border-bottom: 1px solid #75D9EB;
-      color: #00ADEC;
+      border-bottom: 1px solid $header;
+      color: $links_color;
       text-decoration: none;
       &:hover {
         border-color: #666;
@@ -386,18 +414,18 @@ body {
     blockquote, q {
       margin: 1em 2em;
       padding: .5em 1.3em;
-      /*border-left: 1px solid #DDD;*/
+      /*border-left: 1px solid $light_text;*/
       color: #666;
       font: italic 0.9em / 1.7 Georgia, "Times New Roman", Times, serif;
       margin-top: -40px; }
     blockquote {
       &:before, &:after {
-        color: #75D9EB;
+        color: $header;
         display: block;
         font-size: 625%; } }
     q {
       &:before, &:after {
-        color: #75D9EB;
+        color: $header;
         display: block;
         font-size: 625%; } }
     blockquote:before, q:before {
@@ -411,11 +439,11 @@ body {
       height: 60px;
       margin-top: -75px;
       margin-left: 415px; }
-    code {
-      display: block;
-      margin: 1em 2em;
-      padding: 1em 1.5em;
-      white-space: pre-wrap; }
+    //code {
+      //display: block;
+      //margin: 1em 2em;
+      //padding: 1em 1.5em;
+      //white-space: pre-wrap; }
     ul li {
       margin: 0 .8em .5em;
       list-style-type: circle; }
@@ -465,12 +493,12 @@ body {
   ul.social_fixed {
     display: block;
     position: fixed;
-    top: 55px;
+    top: 70px;
     margin: 0 0 0 -95px;
     padding: 0;
 
     li {
-      background-color: #fff;  
+      background-color: #fff;
       list-style: none;
       text-align: center;
       margin: 0 12px 5px;
@@ -487,7 +515,7 @@ body {
 	display: block;
 	margin: 1em 2em;
 	padding: 1em 1.5em;
-	border-left: 1px solid #DDD;
+	border-left: 1px solid $light_text;
 	background-color: #EEE;
 	white-space: pre-wrap;
 }*/
@@ -503,12 +531,15 @@ body {
 -----------------------------------------------------------*/
 
 .comments_canvas {
+  width: 100%;
+  float: left;
   background-color: #D3F6FC;
   display: block;
   clear: both;
   h2 {
+    width: 100%;  
     overflow: hidden;
-    border-bottom: 1px solid #DDD;
+    border-bottom: 1px solid $light_text;
     font-size: 1.0em;
     letter-spacing: normal;
     margin: 0 0 15px 0;
@@ -516,7 +547,7 @@ body {
     span.count {
       float: right;
       padding: .1em .5em;
-      background-color: #DDD;
+      background-color: $light_text;
       color: #FFF;
       text-shadow: 0 1px 0 #CCC;
       -moz-border-radius: 3px;
@@ -528,34 +559,46 @@ body {
       float: right;
       margin-top: 7px;
       margin-right: 2px;
-      cursor: pointer; } }
+      cursor: pointer;
+    }
+  }
   .comment, #post_a_comment {
-    margin: 0 12px 5px 12px;
+    margin: 0 12px 0px 12px;
     padding: 5px 0 10px 5px; }
   .admin_comment {
-    border: 1px solid #75D9EB;
+    border: 1px solid $header;
     background-color: #ffffff;
-    margin-bottom: 20px; }
+    margin-bottom: 10px;
+  }
   .comment {
+    min-height: 50px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #CCCCCC;
+    clear: both;
+    .icons{
+      float: right;
+      text-align: right;
+    }
     a {
       float: left;
-      margin-right: 10px;
+      //margin-right: 10px;
     }
-    p {
-      font-size: 0.9em;
-      line-height: 18px;
-      clear: both; }
-    h3 {
-      font-size: 14px;
-      line-height: 12px;
-      letter-spacing: normal;
-      margin: 0;
-      margin: 0 0 7px 0;
-      span.name {
-        color: #00ADEC;
-        a {
-          color: #00ADEC; } } } } }
-
+    p{
+      margin: 5px 0 0 0;
+    }
+    img.avatar {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .author {
+      color: #AAAAAA;
+      font-size: 0.8em;
+      font-family: verdana, sans-serif;
+    }
+  }
+}
 /* Comment */
 
 h3 span.date {
@@ -593,9 +636,12 @@ h3 span.date {
       display: block;
       margin: 0 15px 0 15px; } }
   #post_a_comment {
+    width: 100%;  
+    float: left;
     padding: 0;
     /*padding between last comment and comments container*/
     h2 {
+      clear: both;
       padding: 20px 0 0 0;
       /*whitepaces between last comment and [Post a comment]*/
       margin-left: -12px;
@@ -661,8 +707,8 @@ h3 span.date {
     padding: 0;
     margin-top: 25px; } }
 
-#comment_preview #comment_0 {
-  margin: 0; }
+//#comment_preview #comment_0 {
+//  margin: 0; }
 
 /*Comment Closed*/
 
@@ -714,7 +760,7 @@ h3 span.date {
   span {
     &.comments, &.latest {
       -moz-border-radius: 3px 3px 3px 3px;
-      background-color: #DDDDDD;
+      background-color: $light_text;
       color: #FFFFFF;
       padding: 0.1em 0.5em;
       text-shadow: 0 1px 0 #CCCCCC; }
@@ -777,14 +823,6 @@ img#spam_grill {
 						WMD
 -----------------------------------------------------------*/
 
-.grippie {
-  background: #eeeeee url("../images/grippie.png") no-repeat scroll center 2px;
-  border-color: #DDD;
-  border-style: solid;
-  border-width: 0 1px 1px;
-  cursor: s-resize;
-  height: 9px;
-  overflow: hidden; }
 .tags{
   margin-top: 15px;
   margin-bottom: 20px;
@@ -797,27 +835,15 @@ img#spam_grill {
     border: 1px solid #999;
     font-size: 90%; } }
 
-#wmd-button-bar, #wmd-container textarea {
+#wmd-container textarea {
   width: 520px; }
 
 #wmd-preview p {}
-
-#wmd-button-bar {
-  margin: 0;
-  height: 35px;
-  float: left;
-  clear: both; }
 
 #wmd-container textarea {
   padding: 3px;
   height: 200px;
   line-height: 1.2; }
-
-#wmd-button-row {
-  position: relative;
-  margin: 10px 0 5px 10px;
-  padding: 0;
-  height: 20px; }
 
 .wmd-spacer {
   width: 1px;
@@ -827,81 +853,6 @@ img#spam_grill {
   background-color: Silver;
   display: inline-block;
   list-style: none; }
-
-.wmd-button {
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
-  position: absolute;
-  background-image: url("../images/wmd-buttons.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  display: inline-block;
-  list-style: none; }
-
-.wmd-button>a {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  display: inline-block; }
-
-#wmd-button-bar {
-  #wmd-bold-button {
-    left: 0;
-    background-position: 0 0; }
-  #wmd-italic-button {
-    left: 25px;
-    background-position: -20px 0; }
-  #wmd-spacer1 {
-    left: 50px; }
-  #wmd-link-button {
-    left: 75px;
-    background-position: -40px 0; }
-  #wmd-quote-button {
-    left: 100px;
-    background-position: -60px 0; }
-  #wmd-code-button {
-    left: 125px;
-    background-position: -80px 0; }
-  #wmd-image-button {
-    left: 150px;
-    background-position: -100px 0; }
-  #wmd-spacer2 {
-    left: 175px; }
-  #wmd-olist-button {
-    left: 200px;
-    background-position: -120px 0; }
-  #wmd-ulist-button {
-    left: 225px;
-    background-position: -140px 0; }
-  #wmd-heading-button {
-    left: 250px;
-    background-position: -160px 0; }
-  #wmd-hr-button {
-    left: 275px;
-    background-position: -180px 0; }
-  #wmd-spacer3 {
-    left: 300px; }
-  #wmd-undo-button {
-    left: 325px;
-    background-position: -200px 0; }
-  #wmd-redo-button {
-    left: 350px;
-    background-position: -220px 0; }
-  #wmd-help-button {
-    right: 0;
-    background-position: -240px 0; } }
-
-.wmd-prompt-background {
-  background-color: Black; }
-
-.wmd-prompt-dialog {
-  border-right: 3px solid #999;
-  border-bottom: 3px solid #999;
-  border-top: 3px solid #fff;
-  border-left: 3px solid #fff;
-  background-color: #ddd; }
 
 /*-----------------------------------------------------------
 LOCALIZABLE (NON-IMAGE) BUTTONS
@@ -914,7 +865,7 @@ div.button {
   margin-top: -1px;
   padding: 1px;
   a {
-    background: url("../images/button_left.gif") 0 0 no-repeat !important;
+    background: image-url("button_left.gif") 0 0 no-repeat !important;
     /* !important to overrule background: none on a:hover. Otherwise the default hover color bleeds through */
     display: block;
     float: left;
@@ -928,7 +879,7 @@ div.button {
     text-shadow: 0 0 1px #ffffff;
     text-wrap: none;
     &:hover {
-      background: url("../images/button_left.gif") 0 0 no-repeat !important;
+      background: image-url("button_left.gif") 0 0 no-repeat !important;
       /* !important to overrule background: none on a:hover. Otherwise the default hover color bleeds through */
       display: block;
       float: left;
@@ -942,7 +893,7 @@ div.button {
       text-shadow: 0 0 1px #ffffff;
       text-wrap: none; }
     span {
-      background: url("../images/button_right.gif") 100% 0 no-repeat;
+      background: image-url("button_right.gif") 100% 0 no-repeat;
       color: #000000;
       display: block;
       padding: 0px 12px 3px 0;
@@ -952,7 +903,7 @@ div.button {
       span {
         background-position: 100% -32px !important; } }
     &.disabled {
-      background-image: url("../images/add_button_left_disabled.gif");
+      background-image: url("add_button_left_disabled.gif");
       span {
         color: #555555; } } } }
 
@@ -964,19 +915,22 @@ div.button {
 /*
   IR_Black style (c) Vasily Mikhailitchenko <vaskas@programica.ru>
 */
-
 pre {
   code {
-    background: #203042;
+    display: block;
+    margin: 0;
+    padding: 1em;
+    padding: 1em 1.5em;
+    overflow: auto;
+    background: #203040;
     color: #f8f8f8; }
-  /*background: #000;*/
   .shebang, .comment, .template_comment, .javadoc {
     color: #7c7c7c; }
   .keyword, .tag, .ruby .function .keyword, .tex .command {
     color: #96CBFE; }
   .function .keyword, .sub .keyword, .method, .list .title {
     color: #FFFFB6; }
-  .string, .attribute .value, .cdata, .filter .argument, .attr_selector, .apache .cbracket, .date {
+  .string, .tag .value, .cdata, .filter .argument, .attr_selector, .apache .cbracket, .date {
     color: #A8FF60; }
   .subst {
     color: #DAEFA3; }
@@ -1004,3 +958,128 @@ pre {
     color: #FF73FD; }
   .tex .formula {
     opacity: 0.7; } }
+
+/*-----------------------------------------------------------
+					PAGINATION
+-----------------------------------------------------------*/
+
+.pagination {
+  background: white;
+  font-size: 0.9em;
+  text-align: center;
+  a, span, em {
+    padding: .2em .5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  span.disabled {
+    color: #999;
+    border: 1px solid $light_text; }
+  em {
+    font-weight: bold;
+    background: #2E6AB1;
+    color: white;
+    border: 1px solid #2E6AB1; }
+  a {
+    text-decoration: none;
+    color: #105CB6;
+    border: 1px solid #9AAFE5;
+    &:hover, &:focus {
+      color: #003;
+      border-color: #003; } }
+  .page_info {
+    background: #2E6AB1;
+    color: white;
+    padding: .4em .6em;
+    width: 22em;
+    margin-bottom: .3em;
+    text-align: center;
+    b {
+      color: #003;
+      background: #6aa6ed;
+      padding: .1em .25em; } }
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+/*-----------------------------------------------------------
+					TIPSY
+-----------------------------------------------------------*/
+
+.tipsy {
+  padding: 5px;
+  font-size: 10px;
+  position: absolute;
+  z-index: 100000; }
+
+.tipsy-inner {
+  padding: 5px 8px 4px 8px;
+  background-color: black;
+  color: white;
+  max-width: 200px;
+  text-align: center;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
+
+.tipsy-arrow {
+  position: absolute;
+  background: url('tipsy.gif') no-repeat top left;
+  width: 9px;
+  height: 5px; }
+
+.tipsy-n .tipsy-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -4px; }
+
+.tipsy-nw .tipsy-arrow {
+  top: 0;
+  left: 10px; }
+
+.tipsy-ne .tipsy-arrow {
+  top: 0;
+  right: 10px; }
+
+.tipsy-s .tipsy-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -4px;
+  background-position: bottom left; }
+
+.tipsy-sw .tipsy-arrow {
+  bottom: 0;
+  left: 10px;
+  background-position: bottom left; }
+
+.tipsy-se .tipsy-arrow {
+  bottom: 0;
+  right: 10px;
+  background-position: bottom left; }
+
+.tipsy-e .tipsy-arrow {
+  top: 50%;
+  margin-top: -4px;
+  right: 0;
+  width: 5px;
+  height: 9px;
+  background-position: top right; }
+
+.tipsy-w .tipsy-arrow {
+  top: 50%;
+  margin-top: -4px;
+  left: 0;
+  width: 5px;
+  height: 9px; }
+.socialize{
+  height: 60px;
+  margin-top: 5px;
+  a{
+    float: left;
+    margin-right: 3px;
+  }
+}
