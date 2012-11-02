@@ -35,3 +35,5 @@ solr/data/*
 .bundle/
 Gemfile.lock
 Session.vim
+.sass-cache/
+public/assets
