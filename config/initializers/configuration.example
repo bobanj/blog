@@ -1,5 +1,7 @@
 # encoding: utf-8
 
+# TODO Use rails configuration gem for storing these settings
+
 ADMIN_USERNAME = 'admin'
 ADMIN_PASSWORD = 'admin'
 
@@ -24,10 +26,6 @@ FEED_BURNER_URL = 'http://feeds.feedburner.com/bobanj'
 TWITTER_USERNAME = 'bobanj'
 TWITTER_NUM_TWEETS = 5
 TWITTER_ERR_MESSAGE = "Twitter service is currently unavailable :("
-
-SKRIBIT_SCRIPT_SRC = ""
-SKRIBIT_BLOG_LINK = ""
-SKRIBIT_TITLE = "Skribit Suggestions for Boban Jovanoski Blog"
 
 LINKEDIN_URL = ''
 SKYPE_USERNAME = ''

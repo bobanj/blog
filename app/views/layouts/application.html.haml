@@ -13,9 +13,8 @@
     = csrf_meta_tag
     = stylesheet_link_tag 'blog.css', :media => 'screen, projection'
     = yield :mod_style
-    = javascript_include_tag 'jquery', 'rails', 'highlight', 'tagcloud', 'tipsy'
-    = yield :mod_javascript
     = javascript_include_tag 'application'
+    = yield :mod_javascript
   %body
     = raw "<p class='flash_notice'> #{notice}</p>"  if notice
     = raw "<p class='flash_error'>#{alert}</p>"     if alert

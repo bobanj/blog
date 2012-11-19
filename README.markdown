@@ -5,7 +5,6 @@ My Blog - Its modified Blogcast:
 * Tag support
 * updated WDM
 * Twitter Support
-* Skribit Supoort
 * Added social links
 * Using Sitemap Generator Gem
 

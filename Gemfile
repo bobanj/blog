@@ -30,3 +30,4 @@ gem 'jquery-rails'
 gem 'rspec-rails', :group => [:development, :test]
 gem 'cucumber-rails', :group => :test
 gem 'capybara', :group => :test
+gem 'rails_autolink'

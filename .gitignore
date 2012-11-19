@@ -29,6 +29,7 @@ vendor/rails
 /capybara*
 config/initializers/proxy.rb
 config/initializers/configuration.rb
+config/initializers/twitter.rb
 public/stylesheets/compiled/*
 solr/data
 solr/data/*

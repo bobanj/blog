@@ -12,4 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require highlight
+//= require tagcloud
+//= require tipsy
+//= require blog
+
 //require_tree .
