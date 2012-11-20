@@ -3,10 +3,24 @@
   = image_tag 'bobi_hero.png'
   %p
     My name is Boban Jovanoski, I'm a Software Engineer
-    currently located in Skopje (Macedonia).
+    currently located in Hamburg (Germany).
+    I'm currently working for
+    %a{:href => 'http://www.qype.com', :target => '_blank'} Qype
+    \- A
+    %a{:href => 'http://www.yelp.com', :target => '_blank'} Yelp
+    Company.
+    %br
+    Co-founder of
+    %a{:href => 'http://givebrand.com'} GiveBrand
+    ,
+    %a{:href => 'http://ruby.mk/' }MKRUG
+    (Macedonian Ruby Users Group).
+    %br
     I develop web applications
     using Ruby, Ruby on Rails, Javascript and jQuery
-    and I use my spare time to participate in opensource projects.
+    and I use my spare time to participate in
+    %a{:href => "https://github.com/#{GITHUB_USERNAME}/"} opensource
+    projects.
     You can email me on:
     :javascript
       document.write("#{EMAIL_HTML}".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<='Z'?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));
